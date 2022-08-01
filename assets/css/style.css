@@ -1,0 +1,20 @@
+/* @import url(''); ADD GOOGLE FONT HERE */ 
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* maincontent is for test purposes */
+
+.maincontent {
+    width: 100vw;
+    height: 100vh;
+}
