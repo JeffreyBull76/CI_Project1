@@ -1,4 +1,9 @@
-/* @import url(''); ADD GOOGLE FONT HERE */ 
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif; */
 
 * {
     padding: 0;
@@ -12,9 +17,57 @@ body {
     height: 100vh;
 }
 
-/* maincontent is for test purposes */
-
 .maincontent {
     width: 100vw;
     height: 100vh;
+    /* background: url('../images/ATV_Small&Medium.png')no-repeat center center; */
+}
+
+.maincontent h1, #about h2 {
+    font-family: Pacifico, sans-serif;
+    color: rgb(75, 65, 48);
+}
+
+/* links styling and nav elements */
+
+.navwrapper {
+    display: inline-block;
+}
+
+.navwrapper div {
+    display: inline-block;
+}
+
+a {
+    font-family: Quicksand, sans-serif;
+    text-decoration: none;
+    color: rgb(75, 65, 48);
+    position: relative;
+}
+
+#homebutton, #discoverbutton, #contactbutton {
+    transition: transform 0.4s ease-in;
+}
+
+#homebutton:hover, #discoverbutton:hover, #contactbutton:hover {
+    transform: translate(5px, 5px);
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: rgba(182, 158, 118, 0);
+    transform-origin: right top;
+    transform: scale(0);
+    transition: transform 0.4s ease-in;
+}
+
+a:hover::before {
+    transform: scale(1);
+    background-color: rgba(75, 65, 48, 1);
 }
