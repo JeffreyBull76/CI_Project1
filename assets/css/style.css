@@ -28,7 +28,7 @@ body {
     color: rgb(75, 65, 48);
 }
 
-/* links styling and nav elements */
+/* nav elements */
 
 .navwrapper {
     display: inline-block;
@@ -38,19 +38,30 @@ body {
     display: inline-block;
 }
 
+#homebutton, #discoverbutton, #contactbutton, #aboutbutton:hover, #topbutton:hover {
+    transition: transform 0.4s ease-out;
+}
+
+#homebutton:hover, #discoverbutton:hover, #contactbutton:hover, #aboutbutton:hover, #topbutton:hover {
+    transform: translate(0, -2px);
+}
+
+.active {
+    transform: translate(0, -2px);
+}
+
+.active a {
+    text-underline-position: under;
+    text-decoration: solid underline rgba(75, 65, 48, 1) 2px;
+}
+
+/* links styling */
+
 a {
     font-family: Quicksand, sans-serif;
     text-decoration: none;
     color: rgb(75, 65, 48);
     position: relative;
-}
-
-#homebutton, #discoverbutton, #contactbutton {
-    transition: transform 0.4s ease-in;
-}
-
-#homebutton:hover, #discoverbutton:hover, #contactbutton:hover {
-    transform: translate(5px, 5px);
 }
 
 a::before {
