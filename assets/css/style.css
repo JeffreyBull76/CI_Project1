@@ -12,11 +12,6 @@ font-family: 'Quicksand', sans-serif; */
     box-sizing: border-box;
 }
 
-/* body {
-    width: 100vw;
-    height: 100vh;
-} */
-
 .maincontent {
     width: 100vw;
     height: 100%;
@@ -55,11 +50,11 @@ font-family: 'Quicksand', sans-serif; */
 }
 
 /* button effects */
-#homebutton, #discoverbutton, #contactbutton, #aboutbutton, #topbutton {
+#homebutton, #discoverbutton, #contactbutton {
     transition: transform 0.4s ease-out;
 }
 
-#homebutton:hover, #discoverbutton:hover, #contactbutton:hover, #aboutbutton:hover, #topbutton:hover {
+#homebutton:hover, #discoverbutton:hover, #contactbutton:hover {
     transform: translate(0, -3px);
 }
 
@@ -81,6 +76,13 @@ a {
     color: rgb(75, 65, 48);
     position: relative;
 }
+
+@media screen and (min-width: 2560px) {
+    a {
+        font-size: 40px;
+    }
+}
+
 
 a::before {
     content: '';
@@ -126,9 +128,54 @@ a:hover::before {
     padding: 0 15px 10px 15px;
 }
 
+#aboutbutton {
+    padding: 10px 20px;
+}
+
+/* large screen welcome text changes */
+
+@media screen and (max-width: 1200px) {
+    #welcometext {
+        position: absolute;
+        overflow: hidden;
+        left: 5%;
+        top: 10%;
+        height: 100px;
+        width: 250px;
+        background-color: brown;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #welcometext {
+        position: absolute;
+        overflow: hidden;
+        left: 15%;
+        top: 20%;
+        height: 180px;
+        width: 300px;
+        background-color: brown;
+    }
+}
+
+/* small screen welcome text changes */
+
+@media screen and (max-width: 440px) {
+    #welcometext {
+        position: absolute;
+        overflow: hidden;
+        left: 5%;
+        top: 70%;
+        height: 80px;
+        width: 200px;
+        background-color: brown;
+    }
+}
+
+
 /* about section */
 
-.about {
+#about {
     background-color: aqua;
     width: 100%;
     height: 100%;
@@ -136,28 +183,33 @@ a:hover::before {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: center;
     row-gap: 10px;
 }
 
-.about div {
+#about div {
     display: flex;
     width: 33%;
     min-width: 300px;
+    max-width: 420px;
     height: 500px;
     background-color: blue;
     font-size: 20px;
     justify-content: center;
 }
 
-/* #aboutleft {
+#aboutleft {
     order: 1;
+    flex: 1 1 30%;
 }
 
 #aboutright {
     order: 3;
+    flex: 1 1 30%;
 }
 
 #aboutcenter {
     order: 2;
-} */
+    flex: 1 1 30%;
+}
+
