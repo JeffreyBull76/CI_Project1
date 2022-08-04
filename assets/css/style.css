@@ -79,7 +79,7 @@ a {
 
 @media screen and (min-width: 2560px) {
     a {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -181,7 +181,7 @@ a:hover::before {
     height: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     align-content: center;
     row-gap: 10px;
@@ -196,6 +196,21 @@ a:hover::before {
     background-color: blue;
     font-size: 20px;
     justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+    #about div {
+        max-width: 600px;
+        background-color: rgb(113, 113, 255);
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #about div {
+        max-width: 700px;
+        background-color: rgb(227, 227, 255);
+        font-size: 30px;
+    }
 }
 
 #aboutleft {
