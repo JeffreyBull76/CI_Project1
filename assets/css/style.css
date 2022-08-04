@@ -30,14 +30,24 @@ body {
 
 /* nav elements */
 
-.navwrapper {
+.headerwrapper {
+    position: relative;
+    float: left;
     height: 150px;
-    float: right;
     width: 100%;
+    background-color: brown;
+}
+
+#logowrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 190px;
     background: url('../images/ATV_PlaceholderImage.png') no-repeat left center;
 }
 
-.navwrapper div {
+#homebutton, #discoverbutton, #contactbutton {
     float: right;
     position: relative;
     right: 30px;
@@ -46,7 +56,7 @@ body {
 }
 
 /* button effects */
-#homebutton, #discoverbutton, #contactbutton, #aboutbutton:hover, #topbutton:hover {
+#homebutton, #discoverbutton, #contactbutton, #aboutbutton, #topbutton {
     transition: transform 0.4s ease-out;
 }
 
@@ -93,12 +103,6 @@ a:hover::before {
 }
 
 /* hero image & welcome text */
-
-#paddingdiv {
-    width: 100%;
-    height: 100px;
-    background-color: aqua;
-}
 
 #heroimage {
     overflow: hidden;
