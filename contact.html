@@ -18,9 +18,23 @@
 
     <!-- navigation -->
 
-    <span class="headerwrapper" aria-label="navigation buttons" id="home">
+    <span class="headerwrapper" aria-label="navigation buttons">
         
         <div id="logowrapper"></div>
+        <!-- hamburger menu for mobiles and small screens -->
+        <div class="hamburgermenu">
+            <input id="menutoggle" type="checkbox" />
+            <label class="menubtn" for="menutoggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <!-- hamburger menu items -->
+            <ul class="menubox">
+                <li><a href="index.html" class="menuitem" aria-label="home button">Home</a></li>
+                <li><a href="discover.html" class="menuitem" aria-label="discover us button">Discover</a></li>
+                <li><a href="contact.html" class="menuitem" aria-label="contact us button">Contact</a></li>
+            </ul>
+        </div>
+
         <div id="contactbutton" class="active"><a href="contact.html" aria-label="contact us button" class="active">Contact</a></div>
         <div id="discoverbutton"><a href="discover.html" aria-label="discover us button">Discover</a></div>
         <div id="homebutton"><a href="index.html" aria-label="home button">Home</a></div>
@@ -32,9 +46,9 @@
     <div class="maincontent">
         <h1>Contact Us !</h1>
     </div>
-    
+
     <!-- font awesome script -->
-    <!-- <script src="https://kit.fontawesome.com/9cb253b564.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/9cb253b564.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

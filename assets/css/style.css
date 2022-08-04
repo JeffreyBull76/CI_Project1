@@ -17,7 +17,8 @@ font-family: 'Quicksand', sans-serif; */
     height: 100%;
 }
 
-.maincontent h1, #about h2 {
+.maincontent h1,
+#about h2 {
     font-family: Pacifico, sans-serif;
     color: rgb(75, 65, 48);
 }
@@ -41,20 +42,150 @@ font-family: 'Quicksand', sans-serif; */
     background: url('../images/ATV_PlaceholderImage.png') no-repeat left center;
 }
 
-#homebutton, #discoverbutton, #contactbutton {
+#homebutton,
+#discoverbutton,
+#contactbutton {
     float: right;
     position: relative;
+    clear: left;
     right: 30px;
-    top: 40%;
+    top: 30%;
     margin: 0 30px;
 }
 
+/* hamburger */
+
+#menutoggle {
+    opacity: 0;
+}
+
+.menubtn {
+    z-index: 0;
+    position: fixed;
+    top: -100px;
+    right: -20px;
+    width: 26px;
+    height: 26px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.menubox {
+    z-index: 0;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: -200%;
+    width: 40%;
+    list-style: none;
+}
+
+.menuitem {
+    display: block;
+    padding: 8px 14px;
+    color: rgba(26, 26, 26, 0);
+    line-height: 30px;
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-delay: .5s;
+    transition-duration: .25s;
+    position: relative;
+    top: -60px;
+}
+
+@media screen and (max-width: 660px) {
+
+    #homebutton,
+    #discoverbutton,
+    #contactbutton {
+        float: right;
+        position: absolute;
+        clear: left;
+        right: 30px;
+        top: -300%;
+        margin: 0 30px;
+    }
+
+    #menutoggle {
+        opacity: 0;
+    }
+
+    #menutoggle:checked~.menubtn {
+        transform: rotate(90deg);
+    }
+
+    #menutoggle:checked~.menubox {
+        top: 0 !important;
+    }
+
+    .menubtn {
+        z-index: 99;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 1);
+        transition-duration: .3s;
+        transition-delay: .2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .menubox {
+        z-index: 6;
+        display: block;
+        position: fixed;
+        right: 0;
+        top: -200%;
+        width: 40%;
+        height: auto;
+        margin: 0;
+        padding: 60px 0;
+        list-style: none;
+        background-color: rgba(155, 155, 155, 1);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .menuitem {
+        display: block;
+        padding: 8px 14px;
+        color: rgba(26, 26, 26, 0);
+        line-height: 30px;
+        font-family: Quicksand, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-delay: .5s;
+        transition-duration: .25s;
+        position: relative;
+        top: -60px;
+    }
+
+    #menutoggle:checked~.menubox .menuitem {
+        position: relative;
+        top: 0px;
+        color: rgba(26, 26, 26, 0.6);
+    }
+
+    .menuitem:hover {
+        background-color: #71a0b4;
+    }
+}
+
 /* button effects */
-#homebutton, #discoverbutton, #contactbutton {
+#homebutton,
+#discoverbutton,
+#contactbutton {
     transition: transform 0.4s ease-out;
 }
 
-#homebutton:hover, #discoverbutton:hover, #contactbutton:hover {
+#homebutton:hover,
+#discoverbutton:hover,
+#contactbutton:hover {
     transform: translate(0, -3px);
 }
 
@@ -84,7 +215,7 @@ a {
 }
 
 
-a::before {
+div a::before {
     content: '';
     position: absolute;
     display: block;
@@ -98,7 +229,7 @@ a::before {
     transition: transform 0.2s ease-in;
 }
 
-a:hover::before {
+div a:hover::before {
     transform: scale(1);
     background-color: rgba(75, 65, 48, 1);
 }
@@ -124,7 +255,8 @@ a:hover::before {
     background-color: brown;
 }
 
-#welcometext h1, #aboutbutton {
+#welcometext h1,
+#aboutbutton {
     padding: 0 15px 10px 15px;
 }
 
@@ -191,7 +323,7 @@ a:hover::before {
     display: flex;
     width: 33%;
     min-width: 300px;
-    max-width: 420px;
+    max-width: 460px;
     height: 500px;
     background-color: blue;
     font-size: 20px;
@@ -227,4 +359,3 @@ a:hover::before {
     order: 2;
     flex: 1 1 30%;
 }
-
