@@ -8,7 +8,8 @@ font-family: 'Quicksand', sans-serif; */
 * {
     padding: 0;
     margin: 0;
-    /* border: 1px solid black; */
+    border: 0;
+    /* outline: 1px solid black; */
     background-origin: border-box;
     box-sizing: border-box;
     background-color: rgb(247, 242, 231);
@@ -67,7 +68,7 @@ font-family: 'Quicksand', sans-serif; */
     right: -20px;
     width: 26px;
     height: 26px;
-    color: rgba(0, 0, 0, 0);
+    color: rgb(247, 242, 231);
 }
 
 .menubox {
@@ -83,7 +84,7 @@ font-family: 'Quicksand', sans-serif; */
 .menuitem {
     display: block;
     padding: 8px 14px;
-    color: rgba(26, 26, 26, 0);
+    color: rgb(247, 242, 231);
     line-height: 30px;
     font-family: Quicksand, sans-serif;
     font-size: 14px;
@@ -128,7 +129,7 @@ font-family: 'Quicksand', sans-serif; */
         width: 26px;
         height: 26px;
         cursor: pointer;
-        color: rgba(0, 0, 0, 1);
+        color: rgb(94, 87, 65);
         transition-duration: .3s;
         transition-delay: .2s;
         transition-timing-function: ease-in-out;
@@ -145,8 +146,8 @@ font-family: 'Quicksand', sans-serif; */
         margin: 0;
         padding: 60px 0;
         list-style: none;
-        background-color: rgba(155, 155, 155, 1);
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        background-color: rgb(247, 242, 231);
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);
         transition-duration: .5s;
         transition-timing-function: ease-in-out;
     }
@@ -154,8 +155,9 @@ font-family: 'Quicksand', sans-serif; */
     .menuitem {
         display: block;
         padding: 8px 14px;
-        color: rgba(26, 26, 26, 0);
+        margin: 4px 0;
         line-height: 30px;
+        color: rgb(94, 87, 65);
         font-family: Quicksand, sans-serif;
         font-size: 14px;
         font-weight: 600;
@@ -169,11 +171,10 @@ font-family: 'Quicksand', sans-serif; */
     #menutoggle:checked~.menubox .menuitem {
         position: relative;
         top: 0px;
-        color: rgba(26, 26, 26, 0.6);
     }
 
     .menuitem:hover {
-        background-color: #71a0b4;
+        background-color: rgba(255, 255, 255, 0);
     }
 }
 
@@ -207,6 +208,7 @@ a {
     text-decoration: none;
     color: rgb(75, 65, 48);
     position: relative;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 2560px) {
