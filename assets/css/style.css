@@ -373,7 +373,7 @@ h2 {
 }
 
 legend {
-    margin: 15px 0;
+    padding: 15px 0;
     font-size: 22px;
     text-align: center;
 }
@@ -389,12 +389,14 @@ legend {
 /* form styles */
 
 form {
-    width: 60vw;
-    height: 80vh;
-    margin-left: 20%;
     /* background-color: blue; DEBUG*/
+    width: 60vw;
+    height: auto;
+    padding-bottom: 30px;
+    margin-left: 20%;
     clear: both;
     font-size: 18px;
+    box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
 }
 
 .contactform {
@@ -410,41 +412,52 @@ label, #firstname, #lastname, #email {
 }
 
 #submitbtn {
+    position: relative;
     display: block;
-    border: 1px solid rgb(94, 87, 65);
+    border: 1px solid rgba(94, 87, 65, 0.25 );
     border-radius: 3px;
-    margin: 5px;
-    padding: 4px;
-    background-color: rgba(94, 87, 65, 0.5);
+    padding: 5px;
+    margin: 5px 5px 5px 10%;
+    background-color: rgba(94, 87, 65, 0.1);
     color: black;
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     font-weight: bolder;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
 }
 
 #resetbtn {
     float: left;
-    border: 1px solid rgb(94, 87, 65);
+    border: 1px solid rgba(94, 87, 65, 0.25 );
     border-radius: 3px;
-    margin: 5px;
-    padding: 4px;
-    background-color: rgba(94, 87, 65, 0.5);
+    padding: 5px;
+    margin: 5px 5px 5px 10%;
+    background-color: rgba(94, 87, 65, 0.1);
     color: black;
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     font-weight: bolder;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+#resetbtn:hover, #submitbtn:hover {
+    background-color: rgba(94, 87, 65, 0.3);
 }
 
 input[type=text], input[type=email], textarea {
     font-size: 16px;
-    border: 1px dotted rgb(75, 65, 48);
+    border: 1px solid rgb(75 65 48 / 15%);
+    box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 30%);
     border-radius: 3px;
 }
 
 textarea {
     width: 80%;
+    resize: vertical;
 }
 
 /* responsive form large screen */
@@ -468,7 +481,6 @@ textarea {
     }
     
     legend {
-        margin: 5px 0;
         font-size: 24px;
         padding: 15px 0;
         text-align: center;
@@ -476,7 +488,9 @@ textarea {
 
     input[type=text], input[type=email], textarea {
         font-size: 24px;
-        border: 1px dotted rgb(75, 65, 48);
+        border: 1px solid rgb(75 65 48 / 15%);
+        box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 30%);
+        border-radius: 3px;
     }
 
     
