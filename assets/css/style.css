@@ -9,7 +9,7 @@ font-family: 'Quicksand', sans-serif; */
     padding: 0;
     margin: 0;
     border: 0;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     font-family: 'Quicksand', sans-serif;
     background-origin: border-box;
     box-sizing: border-box;
@@ -373,8 +373,8 @@ h2 {
 }
 
 legend {
-    margin: 5px 0;
-    font-size: 18px;
+    margin: 15px 0;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -383,7 +383,7 @@ legend {
     left: 0;
     width: 100vw;
     height: 60px;
-    background-color: chartreuse;
+    /* background-color: chartreuse; DEBUG*/
 }
 
 /* form styles */
@@ -392,32 +392,106 @@ form {
     width: 60vw;
     height: 80vh;
     margin-left: 20%;
-    text-align: center;
-    background-color: blue;
+    /* background-color: blue; DEBUG*/
     clear: both;
+    font-size: 18px;
 }
 
 .contactform {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(146, 0, 0);
+    /* background-color: rgb(146, 0, 0); DEBUG*/
     text-align: center;
+}
+
+label, #firstname, #lastname, #email {
+    margin: 5px 2px;
 }
 
 #submitbtn {
     display: block;
-}
-#submitbtn {
-    display: block;
+    border: 1px solid rgb(94, 87, 65);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 4px;
+    background-color: rgba(94, 87, 65, 0.5);
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
 #resetbtn {
     float: left;
-    margin-top: 5px;
+    border: 1px solid rgb(94, 87, 65);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 4px;
+    background-color: rgba(94, 87, 65, 0.5);
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
+input[type=text], input[type=email], textarea {
+    font-size: 16px;
+    border: 1px dotted rgb(75, 65, 48);
+    border-radius: 3px;
+}
+
+textarea {
+    width: 80%;
+}
+
+/* responsive form large screen */
+
+@media screen and (min-width: 2560px) {
+    form {
+        width: 50vw;
+        margin-left: 25%;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    label, #firstname, #lastname, #email {
+        margin: 10px 10px;
+        padding: 0 10px;
+    }
+    
+    legend {
+        margin: 5px 0;
+        font-size: 24px;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    input[type=text], input[type=email], textarea {
+        font-size: 24px;
+        border: 1px dotted rgb(75, 65, 48);
+    }
+
+    
+#submitbtn {
+    font-size: 20px;
+}
+
+#resetbtn {
+    font-size: 20px;
+}
+}
+
+/* responsive form small screen */
 
 
+/* responsive form mobile */
 
 
