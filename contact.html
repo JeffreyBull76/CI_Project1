@@ -19,7 +19,7 @@
     <!-- navigation -->
 
     <span class="headerwrapper" aria-label="navigation buttons">
-        
+
         <div id="logowrapper"></div>
         <!-- hamburger menu for mobiles and small screens -->
         <div class="hamburgermenu">
@@ -35,18 +35,37 @@
             </ul>
         </div>
 
-        <div id="contactbutton" class="active"><a href="contact.html" aria-label="contact us button" class="active">Contact</a></div>
+        <div id="contactbutton" class="active"><a href="contact.html" aria-label="contact us button"
+                class="active">Contact</a></div>
         <div id="discoverbutton"><a href="discover.html" aria-label="discover us button">Discover</a></div>
         <div id="homebutton"><a href="index.html" aria-label="home button">Home</a></div>
-        
+
     </span>
 
-    <!-- Main content  -->
+    <div class="whitespace"></div>
+    <div class="contactform">
 
-    <div class="maincontent">
+    <form action="https://formdump.codeinstitute.net" method="post">
+
         <h1>Contact Us !</h1>
-    </div>
+        <fieldset>
 
+            <legend>Your Details</legend>
+            <div class="formelement" id="contactname1"><label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required></div>
+            
+            <div class="formelement" id="contactname2"><label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required></div>
+            
+            <div class="formelement" id="email"><label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required></div>
+
+    
+        </fieldset>
+
+    </form>
+
+</div>
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/9cb253b564.js" crossorigin="anonymous"></script>
 </body>
