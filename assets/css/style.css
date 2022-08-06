@@ -402,7 +402,7 @@ form {
 .contactform {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     /* background-color: rgb(146, 0, 0); DEBUG*/
     text-align: center;
 }
@@ -462,10 +462,10 @@ textarea {
 
 /* responsive form large screen */
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1800px) {
     form {
-        width: 50vw;
-        margin-left: 25%;
+        width: 40vw;
+        margin-left: 30%;
         font-size: 24px;
     }
 
@@ -488,13 +488,13 @@ textarea {
 
     input[type=text], input[type=email], textarea {
         font-size: 24px;
-        border: 1px solid rgb(75 65 48 / 15%);
-        box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 30%);
-        border-radius: 3px;
     }
 
+    .lrgrespformlbl {
+        display: block;
+    }
     
-#submitbtn {
+    #submitbtn {
     font-size: 20px;
 }
 
@@ -503,9 +503,30 @@ textarea {
 }
 }
 
+@media screen and (max-width: 1400px) {
+    .lrgrespformlbl {
+        display: block;
+    }
+} 
+
 /* responsive form small screen */
 
+@media screen and (max-width: 1000px) {
+    .smlrespformlbl {
+        display: block;
+    }
+} 
 
 /* responsive form mobile */
 
+@media screen and (max-width: 460px) {
+    .smlrespformlbl {
+        display: block;
+    }
 
+    form {
+        width: 80vw;
+        margin-left: 10%;
+        font-size: 24px;
+    }
+} 
