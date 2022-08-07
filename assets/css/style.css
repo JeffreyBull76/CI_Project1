@@ -9,7 +9,7 @@ font-family: 'Quicksand', sans-serif; */
     padding: 0;
     margin: 0;
     border: 0;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     font-family: 'Quicksand', sans-serif;
     background-origin: border-box;
     box-sizing: border-box;
@@ -21,8 +21,7 @@ font-family: 'Quicksand', sans-serif; */
     height: 100%;
 }
 
-.maincontent h1,
-#about h2 {
+h1, #about h2 {
     font-family: Pacifico, sans-serif;
     color: rgb(75, 65, 48);
 }
@@ -41,8 +40,11 @@ font-family: 'Quicksand', sans-serif; */
     top: 0;
     left: 0;
     height: 150px;
-    width: 190px;
-    background: url('../images/ATV_PlaceholderImage.png') no-repeat left center;
+    padding: 20px 0 0 20px;
+    font-weight: bold;
+    font-size: 160%;
+    text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+    /* background: url('../images/ATV_PlaceholderImage.png') no-repeat left center; */
 }
 
 #homebutton,
@@ -97,7 +99,7 @@ font-family: 'Quicksand', sans-serif; */
     top: -60px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
 
     #homebutton,
     #discoverbutton,
@@ -244,7 +246,9 @@ div a:hover::before {
     overflow: hidden;
     height: 445px;
     width: 100%;
-    background: url('../images/ATV_PlaceholderHero.png') no-repeat center center;
+    background-color: blue;
+    background: url('../images/ATV_Small&Medium.png') no-repeat center center;
+    background-size: cover;
     position: relative;
 }
 
@@ -524,6 +528,16 @@ textarea {
         display: block;
     }
 
+    #logowrapper {
+        padding: 40px 0 0 20px;
+        font-size: 115%;
+        text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+    }
+
+    #heroimage {
+        background-size: 210%;
+    }
+
     h2 {
         font-size: 28px;
     }
@@ -534,6 +548,16 @@ textarea {
 @media screen and (max-width: 460px) {
     .smlrespformlbl {
         display: block;
+    }
+    
+    #logowrapper {
+        padding: 40px 0 0 10px;
+        font-size: 90%;
+        text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+    }
+
+    #heroimage {
+        background-size: 300%;
     }
 
     form {
