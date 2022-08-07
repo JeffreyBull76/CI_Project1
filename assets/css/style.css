@@ -525,7 +525,7 @@ textarea {
     }
 } 
 
-/* responsive form small screen */
+/* responsive small screen */
 
 @media screen and (max-width: 1000px) {
     .smlrespformlbl {
@@ -553,7 +553,7 @@ textarea {
     }
 }
 
-/* responsive form mobile */
+/* responsive mobile */
 
 @media screen and (max-width: 460px) {
     .smlrespformlbl {
