@@ -144,7 +144,7 @@ h1, #about h2 {
         position: fixed;
         right: 0;
         top: -200%;
-        width: 40%;
+        width: 30%;
         height: auto;
         margin: 0;
         padding: 60px 0;
@@ -245,11 +245,15 @@ div a:hover::before {
 #heroimage {
     overflow: hidden;
     height: 445px;
-    width: 100%;
+    width: 100vw;
     background-color: blue;
     background: url('../images/ATV_Small&Medium.png') no-repeat center center;
     background-size: cover;
     position: relative;
+}
+
+#heroimage img {
+    object-position: right;
 }
 
 #welcometext {
@@ -535,7 +539,7 @@ textarea {
     }
 
     #heroimage {
-        background-size: 210%;
+        background-size: 140%;
     }
 
     h2 {
@@ -543,11 +547,21 @@ textarea {
     }
 } 
 
+@media screen and (max-width: 700px) {
+    #heroimage {
+        background-size: 210%;    
+    }
+}
+
 /* responsive form mobile */
 
 @media screen and (max-width: 460px) {
     .smlrespformlbl {
         display: block;
+    }
+
+    .menubox {
+        width: 40%;
     }
     
     #logowrapper {
