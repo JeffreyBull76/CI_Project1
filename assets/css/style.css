@@ -43,6 +43,10 @@ h1, #about h2 {
     padding: 20px 0 0 20px;
     font-weight: bold;
     font-size: 160%;
+    /* background: url('../images/ATV_PlaceholderImage.png') no-repeat left center; */
+}
+
+#logowrapper h1 {
     text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
     /* background: url('../images/ATV_PlaceholderImage.png') no-repeat left center; */
 }
@@ -53,9 +57,9 @@ h1, #about h2 {
     float: right;
     position: relative;
     clear: left;
-    right: 30px;
-    top: 30%;
-    margin: 0 30px;
+    right: 20px;
+    top: 25%;
+    margin: 0 20px;
 }
 
 /* hamburger */
@@ -102,15 +106,21 @@ h1, #about h2 {
 
 @media screen and (max-width: 768px) {
 
+    #logowrapper {
+        padding: 30px 0 0 20px;
+        font-size: 140%;
+    }
+
     #homebutton,
     #discoverbutton,
     #contactbutton {
+        z-index: 0;
         float: right;
         position: absolute;
         clear: left;
-        right: 30px;
+        right: 15px;
         top: -300%;
-        margin: 0 30px;
+        margin: 0 15px;
     }
 
     #menutoggle {
@@ -221,6 +231,12 @@ a {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    a {
+        font-size: 18px;
+    }
+}
+
 
 div a::before {
     content: '';
@@ -248,7 +264,7 @@ div a:hover::before {
     height: 480px;
     width: 100vw;
     /* background-color: blue; */
-    background: url('../images/HeroImage1.png') no-repeat center center;
+    background: url('../images/HeroImage2.png') no-repeat center center;
     background-size: cover;
     position: relative;
     border-radius: 10px;
@@ -257,13 +273,14 @@ div a:hover::before {
 #welcometext {
     position: absolute;
     overflow: hidden;
-    left: 10%;
-    top: 10%;
+    left: 15%;
+    top: 65%;
     height: fit-content;
     width: fit-content;
     padding: 10px 0 10px 20px;
+    border: 1px solid rgb(75 65 48 / 50%);
     border-radius: 25px 10px 25px 10px;
-    box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
+    box-shadow: 1px 2px 4px -1px rgba(241, 228, 206, 0.7);
 }
 
 #welcometext h2 {
@@ -310,8 +327,8 @@ div a:hover::before {
     #welcometext {
         position: absolute;
         overflow: hidden;
-        left: 5%;
-        top: 10%;
+        left: 10%;
+        top: 65%;
         height: fit-content;
         width: fit-content;
     }
@@ -322,7 +339,7 @@ div a:hover::before {
         position: absolute;
         overflow: hidden;
         left: 15%;
-        top: 20%;
+        top: 60%;
         height: fit-content;
         width: fit-content;
     }
@@ -334,7 +351,7 @@ div a:hover::before {
     #welcometext {
         position: absolute;
         overflow: hidden;
-        left: 5%;
+        left: 10%;
         top: 70%;
         height: fit-content;
         width: fit-content;
@@ -436,6 +453,7 @@ form {
     clear: both;
     font-size: 18px;
     box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
+    border-radius: 25px 10px 25px 10px;
 }
 
 .contactform {
@@ -500,7 +518,7 @@ textarea {
     resize: vertical;
 }
 
-/* responsive form large screen */
+/* responsive large screen */
 
 @media screen and (min-width: 1940px) {
 
@@ -563,11 +581,10 @@ textarea {
     }
 
     #logowrapper {
-        padding: 40px 0 0 20px;
-        font-size: 115%;
-        text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+        padding: 30px 0 0 20px;
+        font-size: 140%;
     }
-
+    
     #heroimage {
         background-size: 140%;
         border-radius: 25px;
@@ -597,11 +614,11 @@ textarea {
     }
     
     #logowrapper {
-        padding: 40px 0 0 10px;
-        font-size: 90%;
-        text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+        font-size: 100%;
+        padding: 7.5% 4px 0 8px;
+        text-align: center;
     }
-
+    
     #heroimage {
         background-size: 350%;
         border-radius: 20px;
