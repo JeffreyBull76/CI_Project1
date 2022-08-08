@@ -244,12 +244,13 @@ div a:hover::before {
 
 #heroimage {
     overflow: hidden;
-    height: 445px;
+    height: 480px;
     width: 100vw;
-    background-color: blue;
-    background: url('../images/ATV_Small&Medium.png') no-repeat center center;
+    /* background-color: blue; */
+    background: url('../images/HeroImage1.png') no-repeat center center;
     background-size: cover;
     position: relative;
+    border-radius: 10px;
 }
 
 #heroimage img {
@@ -261,17 +262,47 @@ div a:hover::before {
     overflow: hidden;
     left: 10%;
     top: 10%;
-    height: 100px;
-    width: 250px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 0 10px 20px;
+    border-radius: 25px 10px 25px 10px;
+    box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
 }
 
-#welcometext h1,
-#aboutbutton {
-    padding: 0 15px 10px 15px;
+#welcometext h2 {
+    font-size: 120%;
+    font-family: Quicksand, sans-serif;
+    font-weight: bolder;
+    text-justify: left;
+    text-align: left;
+    color: rgb(75, 65, 48);
 }
 
 #aboutbutton {
-    padding: 10px 20px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    display: block;
+    border: 1px solid rgba(94, 87, 65, 0.25 );
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(94, 87, 65, 0.1);
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+#aboutbutton a {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#aboutbutton:hover {
+    background-color: rgba(94, 87, 65, 0.3);
 }
 
 /* large screen welcome text changes */
@@ -282,8 +313,8 @@ div a:hover::before {
         overflow: hidden;
         left: 5%;
         top: 10%;
-        height: 100px;
-        width: 250px;
+        height: fit-content;
+        width: fit-content;
     }
 }
 
@@ -293,8 +324,8 @@ div a:hover::before {
         overflow: hidden;
         left: 15%;
         top: 20%;
-        height: 180px;
-        width: 300px;
+        height: fit-content;
+        width: fit-content;
     }
 }
 
@@ -306,8 +337,8 @@ div a:hover::before {
         overflow: hidden;
         left: 5%;
         top: 70%;
-        height: 80px;
-        width: 200px;
+        height: fit-content;
+        width: fit-content;
     }
 }
 
