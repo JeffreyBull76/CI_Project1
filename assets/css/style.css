@@ -225,6 +225,7 @@ a {
     font-family: Quicksand, sans-serif;
     font-size: 20px;
     text-decoration: none;
+    font-weight: bolder;
     color: rgb(75, 65, 48);
     position: relative;
     cursor: pointer;
