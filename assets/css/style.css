@@ -91,6 +91,7 @@ h1, #about h2 {
     top: -200%;
     width: 40%;
     list-style: none;
+    border-radius: 5px 5px 5px 25px;
 }
 
 .menuitem {
@@ -99,7 +100,7 @@ h1, #about h2 {
     color: rgb(247, 242, 231);
     line-height: 30px;
     font-family: Quicksand, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     transition-delay: .5s;
@@ -177,7 +178,7 @@ h1, #about h2 {
         line-height: 30px;
         color: rgb(94, 87, 65);
         font-family: Quicksand, sans-serif;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 600;
         text-decoration: none;
         transition-delay: .5s;
@@ -292,16 +293,18 @@ span a:hover::before {
     font-size: 120%;
     font-family: Quicksand, sans-serif;
     font-weight: bolder;
-    text-justify: left;
     text-align: left;
     color: rgb(75, 65, 48);
     padding-right: 20px;
 }
 
 #aboutbutton {
+    clear: both;
     height: fit-content;
     width: fit-content;
     position: relative;
+    top: 1px;
+    left: -5px;
     display: block;
     border: 1px solid rgba(94, 87, 65, 0.25 );
     border-radius: 3px;
@@ -309,7 +312,6 @@ span a:hover::before {
     margin: 5px;
     background-color: rgba(94, 87, 65, 0.1);
     color: black;
-    font-size: 12px;
     text-decoration: none;
     cursor: pointer;
     font-weight: bolder;
@@ -318,7 +320,6 @@ span a:hover::before {
 }
 
 #aboutbutton a {
-    font-size: 150%;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -339,14 +340,26 @@ span a:hover::before {
     }
 }
 
+@media screen and (max-width: 1440px) {
+    #aboutbutton a {
+        font-size: 95%;
+    }
+}
+
 @media screen and (min-width: 2560px) {
     #welcometext {
+        font-size: 140%;
         position: absolute;
         overflow: hidden;
         left: 15%;
         top: 60%;
         height: fit-content;
         width: fit-content;
+    }
+
+    
+    #aboutbutton {
+        top: -5px;
     }
 }
 
@@ -390,6 +403,13 @@ span a:hover::before {
     border-radius: 25px 10px 25px 10px;
     box-shadow: 1px 2px 4px -1px rgba(241, 228, 206, 0.5);
     background-color: rgb(247, 242, 231);
+}
+
+#about h3 {
+    font-size: 180%;
+    font-weight: lighter;
+    font-family: Pacifico, sans-serif;
+    color: rgb(75, 65, 48);
 }
 
 @media screen and (min-width: 1440px) {
