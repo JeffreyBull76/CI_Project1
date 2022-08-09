@@ -16,8 +16,8 @@ font-family: 'Quicksand', sans-serif; */
 }
 
 body {
-    background-color: rgb(247, 242, 231);
-    /* background: linear-gradient(0deg, rgb(255, 241, 212), rgb(247, 242, 231), rgb(247, 242, 231)); */
+    /* background-color: rgb(247, 242, 231); */
+    background: linear-gradient(0deg, rgb(255, 253, 241), rgb(247, 242, 231), rgb(247, 242, 231));
 }
 
 .maincontent {
@@ -378,13 +378,14 @@ span a:hover::before {
     row-gap: 10px;
 }
 
-#aboutleft, #aboutright, #aboutcenter {
+#about div {
     width: 33%;
     min-width: 300px;
     max-width: 460px;
-    height: 500px;
+    height: fit-content;
     font-size: 16px;
-    justify-content: center;
+    line-height: 150%;
+    padding: 15px;
     border: 1px solid rgba(179, 157, 119, 0.1);
     border-radius: 25px 10px 25px 10px;
     box-shadow: 1px 2px 4px -1px rgba(241, 228, 206, 0.5);
@@ -407,20 +408,27 @@ span a:hover::before {
 #aboutleft {
     order: 1;
     flex: 1 1 30%;
-    background-color: crimson;
+    text-align: left;
 }
 
 #aboutright {
     order: 3;
     flex: 1 1 30%;
-    background-color: blue;
+    text-align: right;
 }
 
 #aboutcenter {
     order: 2;
     flex: 1 1 30%;
-    background-color: chartreuse;
+    text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    #aboutcenter, #aboutright, #aboutleft {
+        text-align: center;
+    }
+}
+
 
 /* footer */
 
