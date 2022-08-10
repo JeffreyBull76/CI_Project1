@@ -223,8 +223,7 @@ h1 {
 }
 
 .active a {
-    text-underline-position: under;
-    text-decoration: solid underline rgb(226, 63, 79) 2px;
+    border-bottom: 2px solid rgb(226, 63, 79);
 }
 
 /* links styling */
@@ -258,12 +257,12 @@ a {
 }
 
 
-span a::before {
+.headerwrapper a::before {
     content: '';
     position: absolute;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     bottom: -3px;
     left: 0;
     background-color: rgba(182, 158, 118, 0);
@@ -272,7 +271,7 @@ span a::before {
     transition: transform 0.2s ease-in;
 }
 
-span a:hover::before {
+.headerwrapper a:hover::before {
     transform: scale(1);
     background-color: rgb(226, 63, 79);
 }
@@ -660,3 +659,7 @@ textarea {
 
 /* gallery */
 
+.gallerycontent {
+    height: 100vh;
+    width: 100%;
+}
