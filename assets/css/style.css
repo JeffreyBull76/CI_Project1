@@ -47,12 +47,10 @@ h1, #about h2 {
     padding: 20px 0 0 20px;
     font-weight: bold;
     font-size: 160%;
-    /* background: url('../images/ATV_PlaceholderImage.png') no-repeat left center; */
 }
 
 #logowrapper h1 {
     text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
-    /* background: url('../images/ATV_PlaceholderImage.png') no-repeat left center; */
 }
 
 #homebutton,
@@ -63,7 +61,7 @@ h1, #about h2 {
     clear: left;
     right: 20px;
     top: 25%;
-    margin: 0 20px;
+    margin: 0 22px;
 }
 
 /* hamburger */
@@ -223,7 +221,7 @@ h1, #about h2 {
 
 a {
     font-family: Quicksand, sans-serif;
-    font-size: 20px;
+    font-size: 120%;
     text-decoration: none;
     font-weight: bolder;
     color: rgb(75, 65, 48);
@@ -233,13 +231,19 @@ a {
 
 @media screen and (min-width: 2560px) {
     a {
-        font-size: 30px;
+        font-size: 150%;
     }
 }
 
 @media screen and (max-width: 1000px) {
     a {
-        font-size: 18px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    a {
+        font-size: 110%;
     }
 }
 
@@ -269,7 +273,6 @@ span a:hover::before {
     overflow: hidden;
     height: 480px;
     width: 100%;
-    /* background-color: blue; */
     background: url('../images/HeroImage2.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
@@ -277,103 +280,61 @@ span a:hover::before {
 }
 
 #welcometext {
-    background-color: rgb(247, 242, 231);
-    position: absolute;
+    background-color: rgba(247, 242, 231, .7);
+    position: relative;
     overflow: hidden;
-    left: 15%;
-    top: 65%;
+    left: 82%;
+    top: 76%;
     height: fit-content;
     width: fit-content;
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px 10px 20px;
     border: 1px solid rgb(75 65 48 / 50%);
     border-radius: 25px 10px 25px 10px;
     box-shadow: 1px 2px 4px -1px rgba(241, 228, 206, 0.7);
-}
-
-#welcometext h2 {
-    font-size: 120%;
-    font-family: Quicksand, sans-serif;
-    font-weight: bolder;
-    text-align: left;
-    color: rgb(75, 65, 48);
-    padding-right: 20px;
-}
-
-#aboutbutton {
-    clear: both;
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    top: 1px;
-    left: -5px;
-    display: block;
-    border: 1px solid rgba(94, 87, 65, 0.25 );
-    border-radius: 3px;
-    padding: 5px;
-    margin: 5px;
-    background-color: rgba(94, 87, 65, 0.1);
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bolder;
-    transition-duration: .3s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 
-#aboutbutton a {
-    background-color: rgba(0, 0, 0, 0);
+#welcometext h2 {
+    font-size: 100%;
+    font-family: Pacifico, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    color: rgb(75, 65, 48);
+    text-shadow: 1px 1px 3px rgba(247, 242, 231, 1);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-#aboutbutton:hover {
-    background-color: rgba(94, 87, 65, 0.3);
+#welcometext:hover {
+    background-color: rgba(247, 242, 231, 1);
 }
 
 /* large screen welcome text changes */
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 2000px) {
     #welcometext {
-        position: absolute;
-        overflow: hidden;
-        left: 10%;
+        font-size: 160%;
         top: 65%;
-        height: fit-content;
-        width: fit-content;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    #aboutbutton a {
-        font-size: 95%;
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    #welcometext {
-        font-size: 140%;
-        position: absolute;
-        overflow: hidden;
-        left: 15%;
-        top: 60%;
-        height: fit-content;
-        width: fit-content;
-    }
-
-    
-    #aboutbutton {
-        top: -5px;
     }
 }
 
 /* small screen welcome text changes */
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 768px) {
     #welcometext {
-        position: absolute;
-        overflow: hidden;
-        left: 10%;
-        top: 70%;
-        height: fit-content;
-        width: fit-content;
+        position: relative;
+        left: 72%;
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #welcometext {
+        position: relative;
+        left: 55%;
+        top: 80%;
     }
 }
 
@@ -388,18 +349,17 @@ span a:hover::before {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: center;
-    column-gap: 5px;
     row-gap: 10px;
 }
 
 #about div {
-    width: 33%;
     min-width: 300px;
     max-width: 460px;
     height: fit-content;
     font-size: 16px;
     line-height: 150%;
     padding: 15px;
+    margin: 15px;
     border: 1px solid rgba(179, 157, 119, 0.1);
     border-radius: 25px 10px 25px 10px;
     box-shadow: 1px 2px 4px -1px rgba(241, 228, 206, 0.5);
@@ -407,10 +367,16 @@ span a:hover::before {
 }
 
 #about h3 {
+    display: inline-block;
     font-size: 180%;
     font-weight: lighter;
     font-family: Pacifico, sans-serif;
     color: rgb(75, 65, 48);
+}
+
+#about i{
+    font-size: 160%;
+    padding-right: 15px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -428,19 +394,19 @@ span a:hover::before {
 
 #aboutleft {
     order: 1;
-    flex: 1 1 30%;
+    flex: 0 0 25%;
     text-align: left;
 }
 
 #aboutright {
     order: 3;
-    flex: 1 1 30%;
+    flex: 0 0 25%;
     text-align: right;
 }
 
 #aboutcenter {
     order: 2;
-    flex: 1 1 30%;
+    flex: 0 0 25%;
     text-align: center;
 }
 
@@ -480,13 +446,11 @@ legend {
     left: 0;
     width: 100%;
     height: 60px;
-    /* background-color: chartreuse; DEBUG*/
 }
 
 /* form styles */
 
 form {
-    /* background-color: blue; DEBUG*/
     width: 60%;
     height: auto;
     padding-bottom: 30px;
@@ -568,7 +532,6 @@ textarea {
 @media screen and (min-width: 1940px) {
 
     .contactform {
-        /* background-color: rgb(146, 0, 0); DEBUG*/
         padding: 120px 0 400px 0;
     }
 
@@ -576,12 +539,6 @@ textarea {
         width: 40%;
         margin-left: 30%;
         font-size: 24px;
-    }
-
-    h2 {
-        font-size: 46px;
-        padding: 20px 0;
-        text-align: center;
     }
 
     label, #firstname, #lastname, #email {
@@ -676,12 +633,7 @@ textarea {
     }
 
     .contactform {
-        /* background-color: rgb(146, 0, 0); DEBUG*/
         padding: 25px 0 5px 0;
-    }
-
-    h2 {
-        font-size: 22px;
     }
 
     .whitespace {
