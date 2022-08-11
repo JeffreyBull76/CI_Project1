@@ -667,7 +667,7 @@ textarea {
 
   .gallery-grid {
     width: 100%;
-    --gap: 5px;
+    --gap: 2px;
     --num-cols: 8;
     --row-height: fit-content;
   
@@ -686,7 +686,8 @@ textarea {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: red;
+    overflow: hidden;
+    object-fit: cover;
   }
 
   .gallery-item img {
@@ -694,17 +695,40 @@ textarea {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-  
-  /* .gallery-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     opacity: 80%;
-    transition: scale .2s ease-in-out;
-    border-radius: 10px;
+    transform: scale(0.999);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    border-radius: 4px;
     cursor: pointer;
-  } */
+  }
+
+  .gallery-item img:hover {
+    opacity: 100%;
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1); 
+    -ms-transform:scale(1.1); 
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+  }
+
+  .portrait {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .landscape {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .smallimage {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 
   /* .gallery-grid > img:hover {
     opacity: 100%;
@@ -723,41 +747,41 @@ textarea {
     padding: 25px;
   } */
 
-  .gallery-item:is(:first-child, :nth-child(6))  {
+  /* .gallery-item:is(:first-child, :nth-child(8))  {
     grid-column: span 2;
     grid-row: span 3;
   }
 
-  .gallery-item:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(8), :nth-child(9), :nth-child(10)) {
-    grid-column: span 3;
+  .gallery-item:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(11), :nth-child(8), :nth-child(9), :nth-child(10)), :nth-child(11), :nth-child(12), :nth-child(13), :nth-child(14), :nth-child(15), :nth-child(16) {
+    grid-column: span 2;
     grid-row: span 2;
-  }
+  } */
 
 
-/* Gallery udner 1024px */
+/* Gallery udner 768px */
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .gallery-grid {
       --num-cols: 4;
       --row-height: fit-content;
     }
-  }  */
+  } 
 
   /* Gallery udner 440px */
 
-  /* @media screen and (max-width: 440px) {
+  @media screen and (max-width: 440px) {
     .gallery-grid {
       --num-cols: 2;
       --row-height: fit-content;
     }
 
-    .gallery-grid img:is(:first-child, :nth-child(6))  {
+    /* .gallery-item:is(:first-child, :nth-child(6))  {
         grid-column: span 1;
         grid-row: span 2;
       }
     
-      .gallery-grid img:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(8), :nth-child(9), :nth-child(10)) {
+      .gallery-item:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(8), :nth-child(9), :nth-child(10)) {
         grid-column: span 1;
         grid-row: span 1;
-      }
-  }  */
+      } */
+  } 
