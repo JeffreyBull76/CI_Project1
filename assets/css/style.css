@@ -685,13 +685,26 @@ textarea {
     height: 100%;
     object-fit: cover;
     opacity: 80%;
-    transition: all .2s ease-in-out;
+    transition: scale .2s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
   .gallery-grid > img:hover {
     opacity: 100%;
     transform: scale(1.002);
     z-index: 90;
+  }
+
+  .gallery-grid > img:active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    object-fit: scale-down;
+    transform-origin: top center;
+    z-index: 90;
+    padding: 25px;
   }
 
   .gallery-grid img:is(:first-child, :nth-child(6))  {
@@ -732,5 +745,3 @@ textarea {
         grid-row: span 1;
       }
   } 
-
-
