@@ -665,6 +665,17 @@ textarea {
     width: 100%;
 }
 
+.losefocus {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(247, 242, 231);;
+    z-index: -1;
+    visibility: hidden;
+}
+
   .gallery-grid {
     width: 100%;
     --gap: 2px;
@@ -724,10 +735,15 @@ textarea {
     height: 90vh;
     width: auto;
     border: 5px solid rgb(247, 242, 231);
-    z-index: 1;
+    z-index: 2;
     margin: 20px;   
     contain: content;
   }
+
+  .gallery-item:focus ~ .losefocus {
+    z-index: 1;
+    visibility: visible;
+}
 
   .portrait {
     grid-column: span 2;
