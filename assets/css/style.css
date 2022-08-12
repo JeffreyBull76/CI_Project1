@@ -50,7 +50,7 @@ h1 {
 }
 
 #logowrapper h1 {
-    text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0,0,0,0.15);
+    text-shadow: 2px 3px 0px #fff, 7px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 #homebutton,
@@ -421,7 +421,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    #aboutcenter, #aboutright, #aboutleft {
+
+    #aboutcenter,
+    #aboutright,
+    #aboutleft {
         text-align: center;
     }
 }
@@ -476,7 +479,7 @@ form {
     font-size: 18px;
     box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
     border-radius: 25px 10px 25px 10px;
-    background-color: rgb(247, 242, 231); 
+    background-color: rgb(247, 242, 231);
 }
 
 .contactform {
@@ -487,18 +490,22 @@ form {
     padding: 60px 0 180px 0;
 }
 
-.contactform input, textarea {
+.contactform input,
+textarea {
     background-color: rgba(241, 228, 206, 0.3);
 }
 
-label, #firstname, #lastname, #email {
+label,
+#firstname,
+#lastname,
+#email {
     margin: 5px 2px;
 }
 
 #submitbtn {
     position: relative;
     display: block;
-    border: 1px solid rgba(94, 87, 65, 0.25 );
+    border: 1px solid rgba(94, 87, 65, 0.25);
     border-radius: 3px;
     padding: 5px;
     margin: 5px 5px 5px 10%;
@@ -514,7 +521,7 @@ label, #firstname, #lastname, #email {
 
 #resetbtn {
     float: left;
-    border: 1px solid rgba(94, 87, 65, 0.25 );
+    border: 1px solid rgba(94, 87, 65, 0.25);
     border-radius: 3px;
     padding: 5px;
     margin: 5px 5px 5px 10%;
@@ -528,11 +535,14 @@ label, #firstname, #lastname, #email {
     transition-timing-function: ease-out;
 }
 
-#resetbtn:hover, #submitbtn:hover {
+#resetbtn:hover,
+#submitbtn:hover {
     background-color: rgba(94, 87, 65, 0.3);
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
     font-size: 16px;
     border: 1px solid rgb(75 65 48 / 15%);
     box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 30%);
@@ -558,39 +568,44 @@ textarea {
         font-size: 24px;
     }
 
-    label, #firstname, #lastname, #email {
+    label,
+    #firstname,
+    #lastname,
+    #email {
         margin: 10px 10px;
         padding: 0 10px;
     }
-    
+
     legend {
         font-size: 24px;
         padding: 15px 0;
         text-align: center;
     }
 
-    input[type=text], input[type=email], textarea {
+    input[type=text],
+    input[type=email],
+    textarea {
         font-size: 24px;
     }
 
     .lrgrespformlbl {
         display: block;
     }
-    
-    #submitbtn {
-    font-size: 20px;
-}
 
-#resetbtn {
-    font-size: 20px;
-}
+    #submitbtn {
+        font-size: 20px;
+    }
+
+    #resetbtn {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1400px) {
     .lrgrespformlbl {
         display: block;
     }
-} 
+}
 
 /* responsive small screen */
 
@@ -603,7 +618,7 @@ textarea {
         padding: 30px 0 0 20px;
         font-size: 140%;
     }
-    
+
     #heroimage {
         background-size: 140%;
         border-radius: 25px;
@@ -612,12 +627,12 @@ textarea {
     h2 {
         font-size: 28px;
     }
-} 
+}
 
 @media screen and (max-width: 768px) {
     #heroimage {
-        background-size: 210%; 
-        border-radius: 15px;   
+        background-size: 210%;
+        border-radius: 15px;
     }
 }
 
@@ -631,13 +646,13 @@ textarea {
     .menubox {
         width: 40%;
     }
-    
+
     #logowrapper {
         font-size: 100%;
         padding: 7.5% 4px 0 8px;
         text-align: center;
     }
-    
+
     #heroimage {
         background-size: 350%;
         border-radius: 20px;
@@ -656,7 +671,7 @@ textarea {
     .whitespace {
         height: 30px;
     }
-} 
+}
 
 /* gallery */
 
@@ -666,33 +681,36 @@ textarea {
 }
 
 .losefocus {
+    display: flex;
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(247, 242, 231);;
+    background-color: rgb(247, 242, 231);
     z-index: -1;
     visibility: hidden;
+    align-content: center;
 }
 
-  .gallery-grid {
+.gallery-grid {
     width: 100%;
     --gap: 2px;
     --num-cols: 8;
     --row-height: fit-content;
-  
+
     box-sizing: border-box;
     padding: var(--gap);
-  
+
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
     grid-auto-flow: row;
-  }
+}
 
-  .gallery-item {
+.gallery-item {
+    margin: 0;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -700,9 +718,9 @@ textarea {
     overflow: hidden;
     object-fit: cover;
     background-color: rgb(247, 242, 231);
-  }
+}
 
-  .gallery-item img {
+.gallery-item img {
     display: block;
     width: 100%;
     height: auto;
@@ -716,74 +734,115 @@ textarea {
     transition: all 1s ease;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
-  .gallery-item img:hover {
+.gallery-item img:hover {
     opacity: 100%;
-    -webkit-transform:scale(1.1);
-    -moz-transform:scale(1.1); 
-    -ms-transform:scale(1.1); 
-    -o-transform:scale(1.1);
-    transform:scale(1.1);
-  }
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
-  .gallery-item:focus {
+.gallery-item:focus {
     position: fixed;
-    top: 2%;
+    top: 4%;
     justify-self: center;
     opacity: 100%;
-    height: 90vh;
-    width: auto;
-    border: 5px solid rgb(247, 242, 231);
+    height: 80vh;
+    width: fit-content;
+    border: 1px solid rgb(247, 242, 231);
     z-index: 2;
-    margin: 20px;   
     contain: content;
-  }
+}
 
-  .gallery-item:focus ~ .losefocus {
+.gallery-item:focus img:hover {
+    opacity: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.gallery-item:focus ~ .losefocus {
     z-index: 1;
     visibility: visible;
 }
 
-  .portrait {
+.portrait {
     grid-column: span 2;
     grid-row: span 3;
-  }
+}
 
-  .landscape {
+.landscape {
     grid-column: span 2;
     grid-row: span 2;
-  }
+}
 
-  .smallimage {
+.smallimage {
     grid-column: span 1;
     grid-row: span 1;
-  }
+}
 
 /* Gallery udner 768px */
 
 @media screen and (max-width: 768px) {
-    .gallery-grid {
-      --num-cols: 4;
-      --row-height: fit-content;
-    }
-  } 
-
-/* Gallery udner 440px */
-
-  @media screen and (max-width: 440px) {
-    .gallery-grid {
-      --num-cols: 2;
-      --row-height: fit-content;
+    .portrait {
+        grid-column: span 4;
+        grid-row: span 6;
     }
 
-    .gallery-item:is(:first-child, :nth-child(6))  {
-        grid-column: span 1;
+    .landscape {
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+
+    .smallimage {
+        grid-column: span 2;
         grid-row: span 2;
-      }
-    
-      .gallery-item:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(8), :nth-child(9), :nth-child(10)) {
-        grid-column: span 1;
-        grid-row: span 1;
-      }
-  } 
+    }
+
+    .gallery-item:focus {
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        object-fit: contain;
+        opacity: 100%;
+        height: 50vh;
+        width: fit-content;
+    }
+}
+
+/* Gallery udner 420px */
+
+@media screen and (max-width: 420px) {
+    .portrait {
+        grid-column: span 8;
+        grid-row: span 12;
+    }
+
+    .landscape {
+        grid-column: span 8;
+        grid-row: span 8;
+    }
+
+    .smallimage {
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+
+    .gallery-item:focus {
+        position: fixed;
+        top: 70px;
+        height: 60vh;
+        width: fit-content;
+    }
+
+    .gallery-item:focus>img {
+        width: 180%;
+        height: fit-content;
+    }
+
+}
