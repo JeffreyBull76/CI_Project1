@@ -846,3 +846,25 @@ textarea {
     }
 
 }
+
+/* Gallery text */
+
+.overlaytext {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(226, 63, 79);
+    background-color: rgba(247, 242, 231, .7);
+    border-radius: 5px;
+    padding: 1px 10px;
+    visibility: hidden;
+}
+
+.gallery-item:focus > figcaption {
+    visibility: visible;
+}
