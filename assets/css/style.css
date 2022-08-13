@@ -465,7 +465,8 @@ footer p {
     float: left;
     position: absolute;
     bottom: 15%;
-    left: 5%;
+    left: 7%;
+    font-size: 12px;
 }
 
 .socialmedia {
@@ -724,7 +725,7 @@ textarea {
         float: left;
         position: absolute;
         bottom: 10%;
-        left: 25%;
+        left: 32%;
     }
 }
 
@@ -904,6 +905,10 @@ textarea {
         height: fit-content;
     }
 
+    figure > figcaption {
+        font-size: 13px;
+    }
+
 }
 
 /* Gallery text */
@@ -929,3 +934,4 @@ figcaption {
 .gallery-item:focus > figcaption {
     visibility: visible;
 }
+
