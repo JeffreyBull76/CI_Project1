@@ -288,7 +288,7 @@ a {
 #heroimage {
     margin-top: 0;
     overflow: hidden;
-    height: 480px;
+    height: 445px;
     width: 90%;
     margin-left: 5%;
     background: url('../images/HeroImage2.webp') no-repeat center center;
@@ -794,11 +794,11 @@ textarea {
 
 .gallery-item img:hover {
     opacity: 100%;
-    -webkit-transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    -o-transform: scale(1.08);
-    transform: scale(1.08);;
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);;
     animation: imageflash 1s;
 }
 
