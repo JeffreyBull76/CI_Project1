@@ -42,7 +42,7 @@ h1 {
 #logowrapper {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50px;
     height: 150px;
     padding: 20px 0 0 20px;
     font-weight: bold;
@@ -59,9 +59,9 @@ h1 {
     float: right;
     position: relative;
     clear: left;
-    right: 20px;
+    right: 70px;
     top: 25%;
-    margin: 0 22px;
+    margin: 0 14px;
 }
 
 #homebutton a,
@@ -122,6 +122,7 @@ h1 {
     #logowrapper {
         padding: 30px 0 0 20px;
         font-size: 140%;
+        left: 30px;
     }
 
     #homebutton,
@@ -133,7 +134,7 @@ h1 {
         clear: left;
         right: 15px;
         top: -300%;
-        margin: 0 15px;
+        margin: 0 14px;
     }
 
     #menutoggle {
@@ -248,6 +249,12 @@ a {
     a {
         font-size: 100%;
     }
+    #homebutton,
+    #discoverbutton,
+    #contactbutton {
+        right: 40px;
+        margin: 0 14px;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -282,7 +289,8 @@ a {
     margin-top: 0;
     overflow: hidden;
     height: 480px;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     background: url('../images/HeroImage2.webp') no-repeat center center;
     background-size: cover;
     position: relative;
@@ -422,10 +430,21 @@ a {
 
 @media screen and (max-width: 768px) {
 
+    #about {
+        width: 94%;
+        margin-left: 3%;
+    }
+
     #aboutcenter,
     #aboutright,
     #aboutleft {
         text-align: center;
+        flex: 0 0 30%;
+    }
+
+    #about div {
+        padding: 8px;
+        margin: 8px;
     }
 }
 
@@ -436,16 +455,33 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 120px;
     clear: both;
     padding: 0;
     margin: 0;
 }
 
 footer p {
+    float: left;
     position: absolute;
-    bottom: 20%;
-    left: 4%;
+    bottom: 15%;
+    left: 5%;
+}
+
+.socialmedia {
+    display: flex;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: fit-content;
+    justify-content: right;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+.socialmedia i {
+    margin: 0 10px;
+    margin-right: 30px;
 }
 
 /* static form elements */
@@ -617,10 +653,11 @@ textarea {
     #logowrapper {
         padding: 30px 0 0 20px;
         font-size: 140%;
+        left: 25px;
     }
 
     #heroimage {
-        background-size: 140%;
+        background-size: 160%;
         border-radius: 25px;
     }
 
@@ -634,6 +671,16 @@ textarea {
         background-size: 210%;
         border-radius: 15px;
     }
+
+    .socialmedia {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .socialmedia i {
+        margin: 0 15px;
+    }
+
 }
 
 /* responsive mobile */
@@ -648,13 +695,14 @@ textarea {
     }
 
     #logowrapper {
-        font-size: 100%;
-        padding: 7.5% 4px 0 8px;
+        font-size: 95%;
+        padding: 7.5% 4px 0 18px;
         text-align: center;
+        left: 0;
     }
 
     #heroimage {
-        background-size: 350%;
+        background-size: 380%;
         border-radius: 20px;
     }
 
@@ -671,6 +719,13 @@ textarea {
     .whitespace {
         height: 30px;
     }
+
+    footer p {
+        float: left;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+    }
 }
 
 /* gallery */
@@ -683,7 +738,7 @@ textarea {
 .losefocus {
     display: flex;
     position: fixed;
-    height: 100%;
+    height: 200%;
     width: 100%;
     top: 0;
     left: 0;
@@ -694,7 +749,8 @@ textarea {
 }
 
 .gallery-grid {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     --gap: 2px;
     --num-cols: 8;
     --row-height: fit-content;
@@ -732,29 +788,34 @@ textarea {
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .gallery-item img:hover {
     opacity: 100%;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);;
+    animation: imageflash 1s;
 }
+
+@keyframes imageflash {
+    from {filter: brightness(130%)}
+    to {filter: brightness(100%)}
+  }
 
 .gallery-item:focus {
     position: fixed;
     top: 4%;
     justify-self: center;
     opacity: 100%;
-    height: 80vh;
+    height: 84vh;
     width: fit-content;
     border: 1px solid rgb(247, 242, 231);
     z-index: 2;
-    contain: content;
 }
 
 .gallery-item:focus img:hover {
@@ -764,6 +825,7 @@ textarea {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
+    animation: none;
 }
 
 .gallery-item:focus ~ .losefocus {
@@ -805,13 +867,10 @@ textarea {
     }
 
     .gallery-item:focus {
-        justify-self: center;
-        align-self: center;
-        align-items: center;
-        object-fit: contain;
+        top: 90px;
         opacity: 100%;
-        height: 50vh;
-        width: fit-content;
+        height: 70vh;
+        width: 96vw;
     }
 }
 
@@ -834,10 +893,10 @@ textarea {
     }
 
     .gallery-item:focus {
+        align-items: center;
         position: fixed;
         top: 70px;
-        height: 60vh;
-        width: fit-content;
+        height: 70vh;
     }
 
     .gallery-item:focus>img {
@@ -851,15 +910,17 @@ textarea {
 
 .overlaytext {
     position: relative;
+    display: flex;
+    align-content: center;
 }
 
 figcaption {
-    position: absolute;
-    bottom: 15px;
+    position: fixed;
+    top: 8px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(226, 63, 79);
-    background-color: rgba(247, 242, 231, .7);
+    color: rgb(63, 54, 40);
+    background-color: rgba(247, 242, 231, 1);
     border-radius: 5px;
     padding: 1px 10px;
     visibility: hidden;
