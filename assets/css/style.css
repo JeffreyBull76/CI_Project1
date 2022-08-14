@@ -402,7 +402,7 @@ a {
     padding: 15px;
     margin: 15px;
     border: 1px solid rgba(179, 157, 119, 0.1);
-    border-radius: 25px 10px 25px 10px;
+    border-radius: 5px;
     box-shadow: 1px 2px 4px -1px rgba(241, 228, 206, 0.5);
     background-color: rgb(247, 242, 231);
 }
@@ -411,9 +411,10 @@ a {
     font-size: 170%;
     font-weight: lighter;
     font-family: Pacifico, sans-serif;
-    color: rgb(75, 65, 48);
+    color: rgb(97, 84, 63);
     line-height: 40px;
     margin: 40px 15px 0px 15px;
+    text-align: center;
 }
 
 @media screen and (min-width: 1440px) {
@@ -431,7 +432,8 @@ a {
 
 #about p  {
     font-size: medium;
-    margin-top: 30px;
+    margin: 30px 25px 0 25px;
+    color: rgb(75, 65, 48);
 }
 
 #aboutleft {
@@ -455,22 +457,57 @@ a {
     text-align: center;
 }
 
-#c_doodads:nth-child(odd) {
+/*  Doodads */
+
+#about .l_doodads {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: o;
+    box-shadow: none;
+    justify-content: center;
+}
+
+#ct_doodads:nth-child(odd) {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    padding: 3px;
+}
+
+#ct_doodads:nth-child(even) {
+    position: absolute;
+    float: right;
+    padding: 3px;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+#cb_doodads:nth-child(odd) {
     position: absolute;
     float: left;
     left: 0;
+    bottom: 0;
     padding: 3px;
-    margin-top: 5px;
+    transform: scaleY(-1);
 }
 
-#c_doodads:nth-child(even) {
+#cb_doodads:nth-child(even) {
     position: absolute;
     float: right;
     padding: 3px;
     right: 0;
-    margin-top: 5px;
+    bottom: 0;
     transform: scaleX(-1);
-}
+    rotate: 90deg;
+} 
+
+/* about section responsive elements */
 
 @media screen and (max-width: 768px) {
 
