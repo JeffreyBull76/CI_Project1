@@ -503,12 +503,15 @@ footer p {
 h2 {
     font-size: 30px;
     text-align: center;
+    font-family: 'Pacifico', sans-serif;
+    color: rgb(226, 63, 79);
 }
 
 legend {
     padding: 15px 0;
     font-size: 22px;
     text-align: center;
+    color: rgb(75, 65, 48);
 }
 
 .whitespace {
@@ -530,14 +533,37 @@ form {
     box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
     border-radius: 25px 10px 25px 10px;
     background-color: rgb(247, 242, 231);
+    opacity: 95%;
+}
+
+#contacttext {
+    width: 60%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    clear: both;
+    font-size: 16px;
+    box-shadow: 1px 2px 4px -1px rgb(75 65 48 / 90%);
+    border-radius: 25px 10px 25px 10px;
+    background-color: rgb(247, 242, 231);
+    opacity: 95%;
+}
+
+#contacttext p{
+    padding: 5px;
 }
 
 .contactform {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    height: 100vh;
     text-align: center;
     padding: 60px 0 180px 0;
+    background: url('../images/Contact_Picture.webp') no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
 }
 
 .contactform input,
