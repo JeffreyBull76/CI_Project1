@@ -426,13 +426,13 @@ a {
 @media screen and (min-width: 2560px) {
     #about div {
         max-width: 700px;
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
 #about p  {
-    font-size: medium;
-    margin: 30px 25px 0 25px;
+    font-size: 14px;
+    margin: 20px 15px 0 15px;
     color: rgb(75, 65, 48);
 }
 
@@ -527,6 +527,10 @@ a {
         padding: 8px;
         margin: 8px;
     }
+
+    #about p  {
+        font-size: 16px;
+    }
 }
 
 
@@ -569,11 +573,13 @@ footer p {
 
 /* static form elements */
 
-h2 {
-    font-size: 30px;
+#contacttext h2 {
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: lighter;
     text-align: center;
     font-family: 'Pacifico', sans-serif;
-    color: rgb(226, 63, 79);
+    color: rgb(75, 65, 48);
 }
 
 legend {
@@ -620,7 +626,8 @@ form {
 }
 
 #contacttext p{
-    padding: 5px;
+    padding: 26px 10px 10px 10px;
+    font-size: 14px;
 }
 
 .contactform {
@@ -771,7 +778,7 @@ textarea {
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 
@@ -805,7 +812,7 @@ textarea {
 
     #logowrapper {
         font-size: 95%;
-        padding: 7.5% 4px 0 18px;
+        padding: 9% 4px 0 12px;
         text-align: center;
         left: 0;
     }
