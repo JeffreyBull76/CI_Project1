@@ -655,6 +655,14 @@ form {
     border-radius: 5px;
 }
 
+.contactform2 {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-color: rgb(255, 253, 241);
+}
+
 .contactform input,
 textarea {
     background-color: rgba(241, 228, 206, 0.3);
