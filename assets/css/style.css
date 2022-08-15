@@ -933,7 +933,7 @@ textarea {
     height: auto;
     object-fit: cover;
     opacity: 95%;
-    transform: scale(0.999);
+    /* transform: scale(0.999); */
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -945,11 +945,11 @@ textarea {
 
 .gallery-item img:hover {
     opacity: 100%;
+    transform: scale(1.04);
     -webkit-transform: scale(1.04);
     -moz-transform: scale(1.04);
     -ms-transform: scale(1.04);
     -o-transform: scale(1.04);
-    transform: scale(1.04);;
     animation: imageflash 1s;
 }
 
@@ -999,7 +999,7 @@ textarea {
     grid-row: span 1;
 }
 
-/* Gallery udner 768px */
+/* Gallery udner 1000px */
 
 @media screen and (max-width: 1000px) {
     .portrait {
@@ -1024,6 +1024,13 @@ textarea {
         width: 96vw;
     }
 
+    .gallery-item img {
+        transition: none;
+    }
+
+    .gallery-item img:hover {
+        transform: none;
+    }
 }
 
 /* Gallery udner 420px */
