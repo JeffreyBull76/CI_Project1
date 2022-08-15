@@ -805,6 +805,18 @@ textarea {
         display: block;
     }
 
+    legend {
+        font-size: 18px;
+    }
+
+    #submitbtn {
+        font-size: 12px;
+    }
+    
+    #resetbtn {
+        font-size: 12px;
+    }
+
     .menubox {
         width: 40%;
     }
