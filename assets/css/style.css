@@ -485,11 +485,7 @@ a {
     background: none;
 }
 
-/* #about .icon_doodads img {
-    border-radius: 5%;
-} */
-
-#ct_doodads:nth-child(odd) {
+.ct_doodads:nth-child(odd) {
     position: absolute;
     float: left;
     top: 0;
@@ -497,7 +493,7 @@ a {
     padding: 3px;
 }
 
-#ct_doodads:nth-child(even) {
+.ct_doodads:nth-child(even) {
     position: absolute;
     float: right;
     padding: 3px;
@@ -506,7 +502,7 @@ a {
     transform: scaleX(-1);
 }
 
-#cb_doodads:nth-child(odd) {
+.cb_doodads:nth-child(odd) {
     position: absolute;
     float: left;
     left: 0;
@@ -515,7 +511,7 @@ a {
     transform: scaleY(-1);
 }
 
-#cb_doodads:nth-child(even) {
+.cb_doodads:nth-child(even) {
     position: absolute;
     float: right;
     padding: 3px;
