@@ -471,6 +471,21 @@ a {
     justify-content: center;
 }
 
+#about .icon_doodads {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    box-shadow: none;
+}
+
+/* #about .icon_doodads img {
+    border-radius: 5%;
+} */
+
 #ct_doodads:nth-child(odd) {
     position: absolute;
     float: left;
