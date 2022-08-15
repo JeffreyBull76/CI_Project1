@@ -41,11 +41,12 @@ h1 {
 }
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1100px) {
     #bunting {
-        top: -50px;
+        top: -100px;
     }
 }
+
 
 
 
@@ -138,7 +139,7 @@ h1 {
     top: -60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 
     #logowrapper {
         padding: 30px 0 0 20px;
@@ -767,7 +768,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1526px) {
     .lrgrespformlbl {
         display: block;
     }
@@ -775,7 +776,7 @@ textarea {
 
 /* responsive small screen */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1085px) {
     .smlrespformlbl {
         display: block;
     }
