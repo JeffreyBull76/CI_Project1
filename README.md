@@ -80,7 +80,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
    * The form uses percentile width values and margins to remain centered
    * It's elements (labels & fields) are either inline or block depending on screen size to create a coherent layout at all sizes
    * It's content is responsive in terms of text and field size for smaller devices
-   * The form has had its functionality removed but a test was successfully completed prior to removal (see screenshot below) using the post method and CI address used in earlier projects
+   * The form has had its functionality removed and a very basic thank you page added to show it works as intended without ruining navigation flow.
 
 ![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
 
@@ -94,5 +94,57 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 
 --------------------------------
 
+* ## Testing phase
 
+   * Early testing was getting the gallery and flex elements working correctly 
+   * The flex elements on the main page worked fairly quickly and simply required some responsive design for differing screen sizes
+   * The grid on the gallery page was problematic and required lots of testing of various values to make it display correctly at varying sizes. 
+      * The masonry style layout was achieved using different size images 
+   * Following a test users feedback the gallery had to have its native lazy image loading removed as it didn't display correctly on Safari iOS
 
+--------------------------------
+* ## Lessons learned
+ 
+    * Getting the form to work with floated elements was problematic, this page in future could possibly use a redesign as it ended up being needlessly complex.
+    * In future I would settle on one convetion for responsive CSS code and have each query done per major element.
+    * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
+    * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying somewhat differently, but the end result and actual look I am happy with.
+
+--------------------------------
+
+* ## Validator testing
+
+   * HTML No errors were returned when passing through the official [w3c validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Findex.html)
+   * CSS No errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+   * Lighthouse test (see image)
+
+   ![](assets/images/readme_images/Tidy_Village_Lighthousetest.jpg)
+
+      * main hits on performance were due to lacking cache policy - altering this was beyond the scope of this project.
+
+--------------------------------
+
+* ## Unfixed bugs
+
+   * No bugs that I am aware of exist though testing (as with all live code) is ongoing
+
+--------------------------------
+
+* ## Deployment
+
+   * The site was deployed to GitHub pages. The steps to deploy are as follows: 
+   * In the GitHub repository, navigate to the Settings tab 
+   * From the source section drop-down menu, select the Master Branch
+   * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+      * The live link can be found - [Here](https://jeffreybull76.github.io/CI_Project1/index.html)
+
+--------------------------------
+
+* ## Content
+
+   * All text and images are original created by myself
+   * The gallery was created by following numerous grid tutorials, itterating on those ideas at a base level to display images, and adding the pop up functionality
+   * Hamburger icon from font awesome
+   * Fonts from googlefonts
+
+   
