@@ -18,7 +18,8 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
    * On screen sizes above 820px in width consists of 3 buttons floated right with a simple animation when hovered. These show active page with an underline when clicked.
    * All elements are responsive at various sizes
    * The bunting (flags) effect is desinged to be asymmetrical, it shifts and scales at various screen sizes to remain in view but not to obscure anything vital.
-   * Bunting was designed using inkscape by me.
+   * Bunting was designed using inkscape by me. It is not present on the discover and contact pages.
+   * Navigation elements are consistent across 3 pages
 
 ![](assets/images/readme_images/Tidy_Village_UX.jpg)
 
@@ -48,6 +49,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
    * The content of these boxes has been styled to be responsive at shift justification at different screen sizes
    * Each section has descriptive text 4 corner graphics, and underline graphic and an icon (done with svgs and pngs respectively)
    * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to site below the sites content regardless of flex boxes above.
+      * The footer is consistent across all 3 pages
    * The flow of this content was shifted following feedback from an industry professional. It now has the place information first and welcome / Intro message second.
 
 ![](assets/images/readme_images/Tidy_Village_AboutInfo.jpg)
@@ -75,3 +77,22 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 * ## Contact page
 
    * Page has a simple form that allows users to post feedback with a rural background image (taken by me)
+   * The form uses percentile width values and margins to remain centered
+   * It's elements (labels & fields) are either inline or block depending on screen size to create a coherent layout at all sizes
+   * It's content is responsive in terms of text and field size for smaller devices
+   * The form has had its functionality removed but a test was successfully completed prior to removal (see screenshot below) using the post method and CI address used in earlier projects
+
+![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
+
+--------------------------------
+
+* ## Future roadmap
+
+   * In future direct links to SM feeds would be inserted onto the front page in or below the about section
+   * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page possiby a "Meet us" page. This seemed beyond the scope of this project but may yet be implemented.
+   * Links would be made in the about section to the community development group (a larger organisation and fundraising team)
+
+--------------------------------
+
+
+
