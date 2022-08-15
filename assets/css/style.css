@@ -470,6 +470,7 @@ a {
     border-radius: 0;
     box-shadow: none;
     justify-content: center;
+    background: none;
 }
 
 #about .icon_doodads {
@@ -481,6 +482,7 @@ a {
     border: none;
     justify-content: center;
     box-shadow: none;
+    background: none;
 }
 
 /* #about .icon_doodads img {
@@ -904,19 +906,12 @@ textarea {
 .gallery-grid {
     width: 90%;
     margin-left: 5%;
-    /* --gap: 2px; */
-    /* --num-cols: 8; */
-    /* --row-height: fit-content; */
 
     box-sizing: border-box;
-    /* padding: var(--gap); */
     padding: 2px;
 
     display: grid;
-    /* grid-template-columns: repeat(var(--num-cols), 1fr); */
-    /* grid-auto-rows: var(--row-height); */
     grid-template-columns: repeat(8, 1fr);
-    /* gap: var(--gap); */
     gap: 2px;
     grid-auto-flow: row;
 }
@@ -1006,7 +1001,7 @@ textarea {
 
 /* Gallery udner 768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .portrait {
         grid-column: span 4;
         grid-row: span 6;
@@ -1028,6 +1023,7 @@ textarea {
         height: 70vh;
         width: 96vw;
     }
+
 }
 
 /* Gallery udner 420px */
@@ -1064,6 +1060,9 @@ textarea {
         font-size: 13px;
     }
 
+    #img2, #img9, #img10, #img12, #img15, #img18, #img19, #img20 {
+        display: none;
+    }
 }
 
 /* Gallery text */
