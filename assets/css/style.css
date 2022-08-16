@@ -269,6 +269,7 @@ a {
     a {
         font-size: 100%;
     }
+
     #homebutton,
     #discoverbutton,
     #contactbutton {
@@ -428,7 +429,7 @@ a {
     }
 }
 
-#about p  {
+#about p {
     font-size: 14px;
     margin: 20px 15px 0 15px;
     color: rgb(75, 65, 48);
@@ -515,7 +516,7 @@ a {
     right: 0;
     bottom: 0;
     transform: scale(-1, -1);
-} 
+}
 
 /* about section responsive elements */
 
@@ -538,7 +539,7 @@ a {
         margin: 8px;
     }
 
-    #about p  {
+    #about p {
         font-size: 16px;
     }
 }
@@ -635,7 +636,7 @@ form {
     opacity: 95%;
 }
 
-#contacttext p{
+#contacttext p {
     padding: 26px 10px 10px 10px;
     font-size: 14px;
 }
@@ -733,8 +734,8 @@ textarea {
     }
 
     form {
-        width: 40%;
-        margin-left: 30%;
+        width: 60%;
+        margin-left: 20%;
         font-size: 24px;
     }
 
@@ -831,7 +832,7 @@ textarea {
     #submitbtn {
         font-size: 12px;
     }
-    
+
     #resetbtn {
         font-size: 12px;
     }
@@ -956,9 +957,14 @@ textarea {
 }
 
 @keyframes imageflash {
-    from {filter: brightness(130%)}
-    to {filter: brightness(100%)}
-  }
+    from {
+        filter: brightness(130%)
+    }
+
+    to {
+        filter: brightness(100%)
+    }
+}
 
 .gallery-item:focus {
     position: fixed;
@@ -981,7 +987,7 @@ textarea {
     animation: none;
 }
 
-.gallery-item:focus ~ .losefocus {
+.gallery-item:focus~.losefocus {
     z-index: 4;
     visibility: visible;
 }
@@ -1065,11 +1071,18 @@ textarea {
         height: fit-content;
     }
 
-    figure > figcaption {
+    figure>figcaption {
         font-size: 13px;
     }
 
-    #img2, #img9, #img10, #img12, #img15, #img18, #img19, #img20 {
+    #img2,
+    #img9,
+    #img10,
+    #img12,
+    #img15,
+    #img18,
+    #img19,
+    #img20 {
         display: none;
     }
 }
@@ -1094,7 +1107,6 @@ figcaption {
     visibility: hidden;
 }
 
-.gallery-item:focus > figcaption {
+.gallery-item:focus>figcaption {
     visibility: visible;
 }
-
