@@ -2,9 +2,40 @@
 
 The site is for a community group of volunteers and the organisation which helps keep their village tidy. 
 
-Aghamore is a village in Mayo in the west of Ireland, and as with many rural village it is often overlooked by larger government bodies. <br/>The Aghamore tidy village group seeks to rectify this by keeping the village, clean, tidy and well kept. <br/>This site hopes to give a brief overview of the above, provide a gallery and a contact page for people to leave feedback.
+The site is an imagined one for a real group that exists. Upon completion of the course and with further work it may become a live site.
 
-The aim was to achieve a simple, retro styled yet modern website that was fully responsive whilst using no Javascript. Only pure HTML and CSS were used.<br/>Further to this the desire was to have slightly different layouts at various sizes in attempt to convey the same feeling regardless how it was viewed.
+## Early concept phase 
+
+Early on I decided to go with a fairly standard layout. The site is predominantly aimed at local users and for the group to itself to have a central hub it can use for charity events (see roadmap future section below) I considered 3 main goals.
+
+   * Not being to content heavy but just giving a general vibe about what the group is and the village they help to maintain.
+   * Being easy for other users to maintain or add content to (no heavy use of scripting, made with pure css/html)
+   * Being easy to iterate on later if the sites scope increases.
+
+-----------------------------------------
+
+Below you will see two early concepts quickly sketched using inkscape and gimp.
+
+![](assets/images/readme_images/atv_concept1.png) ![](assets/images/readme_images/atv_concept2.png)
+
+
+   * I considered but ultimately rejected a more cartoon / simplistic approach as it would have been to labour intensive creating all the images from scratch. Where as photo content is easier to produce and optimise for a first project.
+
+Eventually the final design incorporated elements of both ideas (see below) with a more retro but cleaner style applied. Only pure HTML and CSS were used (except for 1 instance of a font awesome script to add an icon for the mobile menu) <br/>Further to this the desire was to have slightly different layouts at various sizes in an attempt to convey the same feeling regardless how it was viewed. The fonts were chosen to convey a subtle retro style without being to difficult to read. 
+
+In terms of code I wanted to hand code all elements from scratch to maximise learning.
+
+-----------------------------------------
+
+## Development process
+
+   * Throughout I have attempted to commit often and use a consistent style annotating each commit with a basic concept such as 'maint' for maintenance and general coding 'repair' for fixing broken elements 'style' for altering visual aspects and so forth.
+
+   * I have left comments in both the html and css files to give a sense of structure and make it easier for future developers to modify
+
+-----------------------------------------
+
+# The final design
 
 ## Appearance of landing page on different devices
 
@@ -15,7 +46,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 * ## Page Header
 
    * Contains a title with the groups name. This has been styled with offset shadow effects
-   * On screen sizes above 820px in width consists of 3 buttons floated right with a simple animation when hovered. These show active page with an underline when clicked.
+   * On screen sizes above 820px the navigation consists of 3 buttons floated right with a simple animation when hovered. These show active page with an underline effect.
    * All elements are responsive at various sizes
    * The bunting (flags) effect is desinged to be asymmetrical, it shifts and scales at various screen sizes to remain in view but not to obscure anything vital.
    * Bunting was designed using inkscape by me. It is not present on the discover and contact pages.
@@ -25,8 +56,11 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 
 * Hamburger menu
 
-   * On screen sizes below 820px the buttons are removed from view and replaced a with simple hamburger style menu. As detailed above this is pure css no javascript was used.
-   * This screen size was originally 768px but following feedback from industry professional it was increased to 820px to account for larger tablets.
+   * On screen sizes below 820px the buttons are removed from view and replaced with a simple hamburger style menu. As detailed above this is pure css no javascript was used.
+      * This is achieved a with navigation element floated off screen and made invisible.
+      * When the radio button is clicked (which is hidden and covered with a font awesome hamburger icon) the navigation slides into view.
+      * The radio button itself is not present above 820px as already mentioned.
+   * This screen size was originally 768px but following feedback from industry professional it was increased to 820px to account for larger tablets. This also prevents the buttons clashing with other graphical elements on resize.
 
 ![](assets/images/readme_images/Tidy_Village_HB_UX.jpg)
 
@@ -36,7 +70,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 
    * Image of Aghamores main street with welcome button.
    * Welcome button auto navigates to the text content below (mainly for use on mobiles)
-   * This image is wide and expansive and not suited to harsh scaling. As such css that increases the size of the image without effecting the contained is used to convery the same feel at various sizes.
+   * This image is wide and expansive and not suited to harsh scaling or losing aspect ration. Css styling that scales the image without effecting the container or aspect ratio is used to convery the same feel at various sizes.
    * Image created in gimp from photo taken by me and then optimised with [tingpng.com](http://tinypng.com)
 
 ![](assets/images/readme_images/Tidy_Village_HeroImage.jpg)
@@ -45,10 +79,10 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 
 * ## Main page content & footer section
 
-   * Consists of 3 main content blocks created using Flex boxes
-   * The content of these boxes has been styled to be responsive at shift justification at different screen sizes
-   * Each section has descriptive text 4 corner graphics, and underline graphic and an icon (done with svgs and pngs respectively)
-   * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to site below the sites content regardless of flex boxes above.
+   * Consists of 3 main content blocks created using Flex 
+   * The content of these boxes has been styled to be responsive at different screen sizes, including keeping its justification coherent as rows are added.
+   * Each section has descriptive text, 4 corner graphics, underline graphic and an icon that sums up the content (done with svgs from 3rd party and hand built pngs respectively)
+   * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to sit below the sites content regardless of flex boxes above.
       * The footer is consistent across all 3 pages
    * The flow of this content was shifted following feedback from an industry professional. It now has the place information first and welcome / Intro message second.
 
@@ -65,7 +99,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
    * Each image can be clicked to view in a larger format which then shows a caption. Clicking outside the image goes back to main gallery inline with expected function that most users will have experience of.
    * The page is built using pure css and html. The focus selector in CSS is used to zoom each image when clicked. When first implemented this resulted in ugly background shifts of the other images and unwanted interaction where clicking outside would result in a new image zoom rather than reverting the zoom. 
        * To fix this a background div was created that sits below all the content using z-index. On focus of an image this background div becomes visible and shifts up the z-index to cover everything, except the image that is zoomed and its respective caption.
-       * This allows the user to click around the image without unwated interaction with the rest of the gallery, I did experiment with making this transparent but it was visually confusing.
+       * This allows the user to click around the image (allowing the image to then 'lose focus') without unwated interaction with the rest of the gallery. I did experiment with making this transparent but it was visually confusing.
     * Following feedback from an industry professional the zoom effect was removed from small screen devices as it was visually confusing.
     * Following feedback from a test user I had to remove the native 'lazy loading' tags in the html as they created a huge bug on Safari iOS 
     * Following feedback from an industry professional the gallery was edited to show less images on smaller devices to prevent excessive scrolling.
@@ -80,7 +114,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
    * The form uses percentile width values and margins to remain centered
    * It's elements (labels & fields) are either inline or block depending on screen size to create a coherent layout at all sizes
    * It's content is responsive in terms of text and field size for smaller devices
-   * The form has had its functionality removed and a very basic thank you page added to show it works as intended without ruining navigation flow.
+   * The form has had its functionality removed and a very basic thank you page added to show it works as intended without ruining navigation flow by going offsite.
 
 ![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
 
@@ -88,9 +122,12 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
 
 * ## Future roadmap
 
-   * In future direct links to SM feeds would be inserted onto the front page in or below the about section
-   * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page possiby a "Meet us" page. This seemed beyond the scope of this project but may yet be implemented.
-   * Links would be made in the about section to the community development group (a larger organisation and fundraising team)
+   * Add a more efficient cache policy inline with lighthouse web test advice
+   * Add easing animations on text and other elements to create a more flowing experience
+   * The site may serve as a way for the group to publicise what it does and as a central hub to navigate to SM sites and would require the following added.
+      * Direct links to SM feeds would be inserted onto the front page in or below the about section
+      * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page possiby a "Meet us" page. This seemed beyond the scope of this project but may yet be implemented.
+      * Links would be made in the about section to the community development group (a larger organisation and fundraising team)
 
 --------------------------------
 
@@ -108,7 +145,7 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
     * Getting the form to work with floated elements was problematic, this page in future could possibly use a redesign as it ended up being needlessly complex.
     * In future I would settle on one convetion for responsive CSS code and have each query done per major element.
     * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
-    * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying somewhat differently, but the end result and actual look I am happy with.
+    * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying code somewhat differently, but the end result and actual look I am happy with.
 
 --------------------------------
 
@@ -145,6 +182,12 @@ The aim was to achieve a simple, retro styled yet modern website that was fully 
    * All text and images are original created by myself
    * The gallery was created by following numerous grid tutorials, itterating on those ideas at a base level to display images, and adding the pop up functionality
    * Hamburger icon from font awesome
-   * Fonts from googlefonts
+   * Fonts from googlefonts (Pacifico & Quicksand)
+   * 3 icons on about section from [SVGrepo](https://svgrepo.com)
 
+----------------------------------
+
+* ### Note
+
+   * Although I have said throughout no JS was used there does exist one instance used for the font awesome icon but no other elements or functions use scripting.
    
