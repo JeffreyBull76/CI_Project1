@@ -1,36 +1,87 @@
-# Aghamore Tidy Village
+# **AGHAMORE TIDY VILLAGE**
 
 The site is for a community group of volunteers and the organisation which helps keep their village tidy. 
 
-The site is an imagined one for a real group that exists. Upon completion of the course and with further work it may become a live site.
+The site is an imagined one for a real group that may require such a site in the near future. 
+Upon completion of the course and with further work it may become a live site, and was designed with this in mind.
 
-## Early concept phase 
+## [**Early Concept**](<#early-concept>)
+   * [**Design Ethos**](<#design-ethos>)
+   * [**Typography**](<#typography>)
+   * [**Colors**](<#colors>)
+   * [**Coding**](<#coding>)
 
-Early on I decided to go with a fairly standard layout. The site is predominantly aimed at local users and for the group to itself to have a central hub it can use for charity events (see roadmap future section below) I considered 3 main goals.
+## [**Development Process**](<#development-process>)
+   * [**Git Commits**](<#git-commits>)
+   * [**Code Comments**](<#code-comments>)
 
-   * Not being to content heavy but just giving a general vibe about what the group is and the village they help to maintain.
-   * Being easy for other users to maintain or add content to (no heavy use of scripting, made with pure css/html)
-   * Being easy to iterate on later if the sites scope increases.
+# [**FINAL DESIGN**](<#final-design>)
 
------------------------------------------
+## [**Features**](<#features>)
+   * [**Navigation**](<#navigation>)
+   * [**Main Page**](<#main-page>)
+   * [**Gallery**](<#gallery>)
+   * [**Contact Form**](<#contact-form>)
+   * [**Future roadmap**](<#future-roadmap>)
+
+## [**TECHNOLOGY**](<#technology>)
+   * HTML5
+   * CSS
+   * Gitpod
+   * Github
+   * GIMP
+   * Inkscape
+
+## [**TESTING**](<#testing>)
+   * [**W3C**](<#w3c>)
+   * [**JIGSAW**](<#jigsaw>)
+   * [**LIGHTHOUSE**](<#lighthouse>)
+   * [**NOTES**](<#notes>)
+
+## [**DEPLOYMENT**](<#deployment>)
+   * To Deploy
+   * To Fork
+   * To Clone
+
+## [**CONTENT**](<#content>)
+   * Media
+   * 3rd Party resources
+
+## [**FINAL THOUGHTS**](<#final-thoughts>)
+
+
+## Early Concept
+
+   * ### Design Ethos
+   * Early on I decided to go with a fairly standard layout. The site is predominantly aimed at local users and for the group to itself to have a central hub it can use for charity events (see roadmap future section below) I considered 3 main goals.
+      * Not being to content heavy but just giving a general vibe about what the group is and the village they help to maintain.
+      * Being easy for other users to maintain or add content to (no heavy use of scripting, made with pure css/html)
+      * Being easy to iterate on later if the sites scope increases.
+   * I considered but ultimately rejected a more cartoon / simplistic approach as it would have been to labour intensive creating all the images from scratch. Where as photo content is easier to produce and optimise for a first project.
 
 Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/atv_concept1.png) ![](assets/images/readme_images/atv_concept2.png)
 
+   * Eventually the final design incorporated elements of both ideas (see below) with a more retro but cleaner style applied. Only pure HTML and CSS were used (except for 1 instance of a font awesome script to add an icon for the mobile menu) <br/>Further to this the desire was to have slightly different layouts at various sizes in an attempt to convey the same feeling regardless how it was viewed. The fonts were chosen to convey a subtle retro style without being to difficult to read. 
 
-   * I considered but ultimately rejected a more cartoon / simplistic approach as it would have been to labour intensive creating all the images from scratch. Where as photo content is easier to produce and optimise for a first project.
+-----------------------------------------
 
-Eventually the final design incorporated elements of both ideas (see below) with a more retro but cleaner style applied. Only pure HTML and CSS were used (except for 1 instance of a font awesome script to add an icon for the mobile menu) <br/>Further to this the desire was to have slightly different layouts at various sizes in an attempt to convey the same feeling regardless how it was viewed. The fonts were chosen to convey a subtle retro style without being to difficult to read. 
+ * ### Typography
+   * Quicksand - is used for the main text of the site and main readable section
+   * Pacifico - is used for more decorative headings that require impact 
+   * Both were chosen to fit the somewhat retro feel
 
-In terms of code I wanted to hand code all elements from scratch to maximise learning.
+-----------------------------------------
+
+ * ### Colors
+    * A soft off white stone like color was chosen, along with a darker brown (nearly black) for the text
+    * Red and white (the colors of the area of Aghamore) were used in the title and small design elements (flags, border graphics)
 
 -----------------------------------------
 
 ## Development process
-
    * Throughout I have attempted to commit often and use a consistent style annotating each commit with a basic concept such as 'maint' for maintenance and general coding 'repair' for fixing broken elements 'style' for altering visual aspects and so forth.
-
    * I have left comments in both the html and css files to give a sense of structure and make it easier for future developers to modify
 
 -----------------------------------------
