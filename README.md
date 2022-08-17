@@ -41,10 +41,10 @@ Upon completion of the course and with further work it may become a live site, a
    * Inkscape
 
 ## [**TESTING**](<#testing-1>)
-   * [**W3C HTML**](<#w3c>)
-   * [**JIGSAW**](<#jigsaw>)
+   * [**W3C HTML**](<#w3c-html>)
+   * [**JIGSAW**](<#jigsaw-css>)
    * [**LIGHTHOUSE**](<#lighthouse>)
-   * [**NOTES**](<#notes>)
+   * [**UNFIXED BUGS**](<#unfixed-bugs>)
 
 ## [**DEPLOYMENT**](<#deployment-1>)
    * To Deploy
@@ -251,11 +251,15 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 * ### Lighthouse
    * See output for lighthouse tests on each page
-   ![](assets/images/readme_images/Tidy_Village_Lighthousetest.jpg)
+
+  *  Index Page
+  *  ![](assets/images/readme_images/Tidy_Village_Lighthousetest.jpg)
    
-   ![](assets/images/readme_images/Tidy_Village_Lighthouse_Discover.jpg)
+  *  Discover Page
+  *  ![](assets/images/readme_images/Tidy_Village_Lighthouse_Discover.jpg)
    
-   ![](assets/images/readme_images/Tidy_Village_Lighthouse_contact.jpg)
+  *  Contact Form
+  *  ![](assets/images/readme_images/Tidy_Village_Lighthouse_contact.jpg)
 
       * main hits on performance were due to lacking cache policy - altering this was beyond the scope of this project.
       * Were the site to go live this could be explored further
