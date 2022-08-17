@@ -41,7 +41,7 @@ Upon completion of the course and with further work it may become a live site, a
    * Inkscape
 
 ## [**TESTING**](<#testing-1>)
-   * [**W3C**](<#w3c>)
+   * [**W3C HTML**](<#w3c>)
    * [**JIGSAW**](<#jigsaw>)
    * [**LIGHTHOUSE**](<#lighthouse>)
    * [**NOTES**](<#notes>)
@@ -52,8 +52,7 @@ Upon completion of the course and with further work it may become a live site, a
    * To Clone
 
 ## [**CONTENT**](<#content-1>)
-   * Media
-   * 3rd Party resources
+   * Media & 3rd Party resources
 
 ## [**FINAL THOUGHTS**](<#final-thoughts-1>)
    * Lessons learned
@@ -230,26 +229,41 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
-AMEND 
-
 * ## Testing
    * Early testing was getting the gallery and flex elements working correctly 
    * The flex elements on the main page worked fairly quickly and simply required some responsive design for differing screen sizes
    * The grid on the gallery page was problematic and required lots of testing of various values to make it display correctly at varying sizes. 
       * The masonry style layout was achieved using different size images 
-   * Following a test users feedback the gallery had to have its native lazy image loading removed as it didn't display correctly on Safari iOS
+   * Following a test users feedback the gallery had to have its native lazy image loading removed as it didn't display correctly on Safari iOS. The load tag prevented the grid populating correctly. This could be reinstated as browser support for the feature increases.
+   * Site has been tested across all major browsers and at a large number of sizes Chrome dev tools were used as well [Responsive Design Checker](https://responsivedesignchecker.com/)
 
-* ### Validator testing
-   * HTML No errors were returned when passing through the official [w3c validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Findex.html)
-   * CSS No errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-   * Lighthouse test (see image)
+* ### W3C HTML
+   * HTML No errors were returned when passing through the official [w3c validator](https://validator.w3.org/nu/)
+   * [Index Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Findex.html)
+   * [Discover Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Fdiscover.html)
+   * [Contact Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Fcontact.html)
+   * [Contact Thank You Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Fcontact_thankyou.html)
 
+* ### JIGSAW CSS
+   * CSS No errors when passing through the Jigsaw validator [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+   * As seen in the link some warnings are returned for including proprietary extensions (webkit) which are used on some of the animation elements
+   * This is unavoidable but should pose no problem for any end user
+
+* ### Lighthouse
+   * See output for lighthouse tests on each page
    ![](assets/images/readme_images/Tidy_Village_Lighthousetest.jpg)
+   
+   ![](assets/images/readme_images/Tidy_Village_Lighthouse_Discover.jpg)
+   
+   ![](assets/images/readme_images/Tidy_Village_Lighthouse_contact.jpg)
 
       * main hits on performance were due to lacking cache policy - altering this was beyond the scope of this project.
+      * Were the site to go live this could be explored further
+      * SEO, Best Practice and Accessibility were all 100%
 
 * ### Unfixed bugs
    * No bugs that I am aware of exist though testing (as with all live code) is ongoing
+
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
