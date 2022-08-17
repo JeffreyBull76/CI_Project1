@@ -55,7 +55,9 @@ Upon completion of the course and with further work it may become a live site, a
    * Media
    * 3rd Party resources
 
-## [**FINAL THOUGHTS**](<#final-thoughts>)
+## [**FINAL THOUGHTS**](<#final-thoughts-1>)
+   * Lessons learned
+   * Acknowledgements
 
 
 ## Early Concept
@@ -196,6 +198,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * It's content is responsive in terms of text and field size for smaller devices
    * The form has had its functionality removed and a very basic thank you page added to show it works as intended without ruining navigation flow by going offsite. 
    * The 'Thank You' page was created following mentor feedback to prevent navigating off site but would not be part of a live site.
+   * This page in a live version could be expanded to have details of the main volunteers who run the group (with their permission) 
 
 ![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
 
@@ -208,35 +211,28 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * Add easing animations on text and other elements to create a more flowing experience
    * The site may serve as a way for the group to publicise what it does and as a central hub to navigate to SM sites and would require the following added.
       * Direct links to SM feeds would be inserted onto the front page in or below the about section
-      * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page possiby a "Meet us" page. This seemed beyond the scope of this project but may yet be implemented.
+      * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page or potentially as an addition to the contact page. This seemed beyond the scope of this project but may yet be implemented.
       * Links would be made in the about section to the community development group (a larger organisation and fundraising team)
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
+* ## Technology
 
-* ## Testing phase
+AMEND
 
+[Go back](<#table-of-contents>)
+-----------------------------------------
+
+AMEND 
+
+* ## Testing
    * Early testing was getting the gallery and flex elements working correctly 
    * The flex elements on the main page worked fairly quickly and simply required some responsive design for differing screen sizes
    * The grid on the gallery page was problematic and required lots of testing of various values to make it display correctly at varying sizes. 
       * The masonry style layout was achieved using different size images 
    * Following a test users feedback the gallery had to have its native lazy image loading removed as it didn't display correctly on Safari iOS
 
-[Go back](<#table-of-contents>)
------------------------------------------
-
-* ## Lessons learned
- 
-    * Getting the form to work with floated elements was problematic, this page in future could possibly use a redesign as it ended up being needlessly complex.
-    * In future I would settle on one convetion for responsive CSS code and have each query done per major element.
-    * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
-    * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying code somewhat differently, but the end result and actual look I am happy with.
-
-[Go back](<#table-of-contents>)
------------------------------------------
-
-* ## Validator testing
-
+* ### Validator testing
    * HTML No errors were returned when passing through the official [w3c validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2Findex.html)
    * CSS No errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjeffreybull76.github.io%2FCI_Project1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
    * Lighthouse test (see image)
@@ -245,15 +241,13 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
       * main hits on performance were due to lacking cache policy - altering this was beyond the scope of this project.
 
-[Go back](<#table-of-contents>)
------------------------------------------
-
-* ## Unfixed bugs
-
+* ### Unfixed bugs
    * No bugs that I am aware of exist though testing (as with all live code) is ongoing
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
+
+AMEND 
 
 * ## Deployment
 
@@ -265,6 +259,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
+AMEND 
 
 * ## Content
 
@@ -277,7 +272,17 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
-* ### Note
+* ## Final Thoughts
+    * Lessons Learned
+      * Getting the form to work with floated elements was problematic, this page in future could possibly use a redesign as it ended up being needlessly complex.
+      * In future I would settle on one convetion for responsive CSS code and have each query done per major element.
+      * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
+      * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying code somewhat differently, but the end result and actual look I am happy with.
+     * Thanks to my mentor for the advice given which helped get this project over the line (despite my life getting in the way of our sessions together) and thank you to the CI slack community for advice and feeback.
+     * Although I have said throughout no JS was used there does exist one instance used for the font awesome icon but no other elements or functions use scripting. A minor thing but I wouldn't want to be misleading.
+   
 
-   * Although I have said throughout no JS was used there does exist one instance used for the font awesome icon but no other elements or functions use scripting.
+[Go back](<#table-of-contents>)
+-----------------------------------------
+
    
