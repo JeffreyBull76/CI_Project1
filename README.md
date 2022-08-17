@@ -12,15 +12,18 @@ Upon completion of the course and with further work it may become a live site, a
    * [**Colors**](<#colors>)
    * [**Coding**](<#coding>)
 
-## [**Development Process**](<#development-process>)
-   * [**Git Commits**](<#git-commits>)
-   * [**Code Comments**](<#code-comments>)
+## [**Development Process**](<#development-process-1>)
+   * Git Commits
+   * Code Comments
 
-# [**FINAL DESIGN**](<#final-design>)
+# [**FINAL DESIGN**](<#final-design-1>)
 
-## [**Features**](<#features>)
+## [**Features**](<#features-1>)
    * [**Navigation**](<#navigation>)
+   * [**Mobile Navigation**](<#mobile-navigation>)
    * [**Main Page**](<#main-page>)
+      * [**Landing Section**](<#landing-section>)
+      * [**About Section**](<#about-section>)
    * [**Gallery**](<#gallery>)
    * [**Contact Form**](<#contact-form>)
    * [**Future roadmap**](<#future-roadmap>)
@@ -84,28 +87,33 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
- * ### Development process
-   * Git Commits - Being new to Git I wanted to keep my commits descriptive and do so often. In retrospect some are longer than is preferred but I hope they convey a sense of purpose. A labelling convention was used:
-     * Maint: for maintenance or general code changes
-     * Style: for large changes to layout or design elements
-     * repair: for fixing errors I introduced
-     * readme: for changes to the readme file
-     * and so on
+ * ### Coding
+    * All coding was done from scratch. Any templates, code snippets or tutorials were heavily modified and fully integrated by hand coding to function within the sites structure. No base code was copy pasted (except for boilerplate code) into the html or css files.
+
+[Go back](<#table-of-contents>)
+-----------------------------------------
+
+* ### Development process
+    * Git Commits - Being new to Git I wanted to keep my commits descriptive and do so often. In retrospect some are longer than is preferred but I hope they convey a sense of purpose. A labelling convention was used:
+     Maint: for maintenance or general code changes
+     Style: for large changes to layout or design elements
+     repair: for fixing errors I introduced
+     readme: for changes to the readme file
+     and so on
    * Code Comments - I have left comments in both the html and css files to give a sense of structure and make it easier for future developers to modify
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
-# The final design
+# **FINAL DESIGN**
 
-## Appearance of landing page on different devices
+## Appearance main page on different devices
 
 ![](assets/images/readme_images/Tidy_Village_Amiresponsive.jpg)
 
 ## Features
 
-* ## Page Header
-
+* ### Navigation
    * Contains a title with the groups name. This has been styled with offset shadow effects
    * On screen sizes above 820px the navigation consists of 3 buttons floated right with a simple animation when hovered. These show active page with an underline effect.
    * All elements are responsive at various sizes
@@ -115,37 +123,43 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_UX.jpg)
 
-* Hamburger menu
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
-   * On screen sizes below 820px the buttons are removed from view and replaced with a simple hamburger style menu. As detailed above this is pure css no javascript was used.
-      * This is achieved a with navigation element floated off screen and made invisible.
-      * When the radio button is clicked (which is hidden and covered with a font awesome hamburger icon) the navigation slides into view.
-      * The radio button itself is not present above 820px as already mentioned.
-   * This screen size was originally 768px but following feedback from industry professional it was increased to 820px to account for larger tablets. This also prevents the buttons clashing with other graphical elements on resize.
+* ### Mobile Navigation
+
+  * On screen sizes below 820px the buttons are removed from view and replaced with a simple hamburger style menu. As detailed above this is pure css no javascript was used.
+    * This is achieved a with navigation menu positioned off screen, with with visibility set to invisible.
+    * When the radio button is clicked (which is hidden and covered with a font awesome hamburger icon) the navigation slides into view.
+    * The radio button itself is not present above 820px as already mentioned.
+    * The radio button has an aria label as no real label is present (for accessability)
+  * This screen size was originally 768px but following feedback from industry professional it was increased to 820px to account for larger tablets. This also prevents the buttons clashing with other graphical elements on resize.
 
 ![](assets/images/readme_images/Tidy_Village_HB_UX.jpg)
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
-* ## Hero Image / Landing section
-
-   * Image of Aghamores main street with welcome button.
-   * Welcome button auto navigates to the text content below (mainly for use on mobiles)
-   * This image is wide and expansive and not suited to harsh scaling or losing aspect ration. Css styling that scales the image without effecting the container or aspect ratio is used to convery the same feel at various sizes.
-   * Image created in gimp from photo taken by me and then optimised with [tingpng.com](http://tinypng.com)
+* ### Main Page
+   * ### Landing section
+     * Hero Image of Aghamores main street with welcome button.
+     * Welcome button auto navigates to the text content below (mainly for use on mobiles)
+     * This image is wide and expansive and not suited to harsh scaling or losing aspect ration. Css styling that scales the image without effecting the container or aspect ratio is used to convery the same feel at various sizes.
+     * Image created in gimp from photo taken by me and then optimised with [tingpng.com](http://tinypng.com)
+     * Also features overlapping bunting effect (as detailed above)
 
 ![](assets/images/readme_images/Tidy_Village_HeroImage.jpg)
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
-* ## Main page content & footer section
-
-   * Consists of 3 main content blocks created using Flex 
-   * The content of these boxes has been styled to be responsive at different screen sizes, including keeping its justification coherent as rows are added.
-   * Each section has descriptive text, 4 corner graphics, underline graphic and an icon that sums up the content (done with svgs from 3rd party and hand built pngs respectively)
-   * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to sit below the sites content regardless of flex boxes above.
+   * ### About Section
+      * Consists of 3 main content blocks created using Flex 
+      *  The content of these boxes has been styled to be responsive at different screen sizes, including keeping its justification coherent as rows are added.
+      * Each section has descriptive text, 4 corner graphics, underline graphic and an icon that sums up the content (done with svgs from 3rd party and hand built pngs respectively)
+      * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to sit below the sites content regardless of flex boxes above.
       * The footer is consistent across all 3 pages
-   * The flow of this content was shifted following feedback from an industry professional. It now has the place information first and welcome / Intro message second.
+      * The flow of this content was shifted following feedback from an industry professional. It now has the place information first and welcome / Intro message second.
 
 ![](assets/images/readme_images/Tidy_Village_AboutInfo.jpg)
 
@@ -167,7 +181,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
     
 ![](assets/images/readme_images/Tidy_Village_Gallerypage.jpg)
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Contact page
 
@@ -179,7 +194,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Future roadmap
 
@@ -190,7 +206,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
       * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page possiby a "Meet us" page. This seemed beyond the scope of this project but may yet be implemented.
       * Links would be made in the about section to the community development group (a larger organisation and fundraising team)
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Testing phase
 
@@ -200,7 +217,9 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
       * The masonry style layout was achieved using different size images 
    * Following a test users feedback the gallery had to have its native lazy image loading removed as it didn't display correctly on Safari iOS
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
+
 * ## Lessons learned
  
     * Getting the form to work with floated elements was problematic, this page in future could possibly use a redesign as it ended up being needlessly complex.
@@ -208,7 +227,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
     * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
     * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying code somewhat differently, but the end result and actual look I am happy with.
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Validator testing
 
@@ -220,13 +240,15 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
       * main hits on performance were due to lacking cache policy - altering this was beyond the scope of this project.
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Unfixed bugs
 
    * No bugs that I am aware of exist though testing (as with all live code) is ongoing
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Deployment
 
@@ -236,7 +258,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
       * The live link can be found - [Here](https://jeffreybull76.github.io/CI_Project1/index.html)
 
---------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ## Content
 
@@ -246,7 +269,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * Fonts from googlefonts (Pacifico & Quicksand)
    * 3 icons on about section from [SVGrepo](https://svgrepo.com)
 
-----------------------------------
+[Go back](<#table-of-contents>)
+-----------------------------------------
 
 * ### Note
 
