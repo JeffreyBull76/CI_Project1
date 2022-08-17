@@ -32,7 +32,7 @@ Upon completion of the course and with further work it may become a live site, a
    * [**Contact Page**](<#contact-page>)
    * [**Future roadmap**](<#future-roadmap>)
 
-## [**TECHNOLOGY**](<#technology>)
+## [**TECHNOLOGY**](<#technology-1>)
    * HTML5
    * CSS
    * Gitpod
@@ -40,18 +40,18 @@ Upon completion of the course and with further work it may become a live site, a
    * GIMP
    * Inkscape
 
-## [**TESTING**](<#testing>)
+## [**TESTING**](<#testing-1>)
    * [**W3C**](<#w3c>)
    * [**JIGSAW**](<#jigsaw>)
    * [**LIGHTHOUSE**](<#lighthouse>)
    * [**NOTES**](<#notes>)
 
-## [**DEPLOYMENT**](<#deployment>)
+## [**DEPLOYMENT**](<#deployment-1>)
    * To Deploy
    * To Fork
    * To Clone
 
-## [**CONTENT**](<#content>)
+## [**CONTENT**](<#content-1>)
    * Media
    * 3rd Party resources
 
@@ -126,7 +126,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_UX.jpg)
 
-[Go back](<#table-of-contents>)
+[Go back](<#features>)
 -----------------------------------------
 
 * ### Mobile Navigation
@@ -140,7 +140,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_HB_UX.jpg)
 
-[Go back](<#table-of-contents>)
+[Go back](<#features>)
 -----------------------------------------
 
 * ### Main Page
@@ -153,7 +153,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_HeroImage.jpg)
 
-[Go back](<#table-of-contents>)
+[Go back](<#features>)
 -----------------------------------------
 
    * ### About Section
@@ -168,6 +168,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_AboutInfo.jpg)
 
+[Go back](<#features>)
 --------------------------------
 
 * ## Discover Page
@@ -187,7 +188,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
     
 ![](assets/images/readme_images/Tidy_Village_Gallerypage.jpg)
 
-[Go back](<#table-of-contents>)
+[Go back](<#features>)
 -----------------------------------------
 
 * ## Contact Page
@@ -202,7 +203,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 ![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
 
-[Go back](<#table-of-contents>)
+[Go back](<#features>)
 -----------------------------------------
 
 * ## Future roadmap
@@ -214,7 +215,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
       * If deployed live as an active site with permissions the actual volunteers names and details would be displayed on a 4th page or potentially as an addition to the contact page. This seemed beyond the scope of this project but may yet be implemented.
       * Links would be made in the about section to the community development group (a larger organisation and fundraising team)
 
-[Go back](<#table-of-contents>)
+[Go back](<#features>)
 -----------------------------------------
 * ## Technology
 
