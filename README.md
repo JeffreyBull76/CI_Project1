@@ -5,8 +5,12 @@ The site is for a community group of volunteers and the organisation which helps
 The site is an imagined one for a real group that may require such a site in the near future. 
 Upon completion of the course and with further work it may become a live site, and was designed with this in mind.
 
+![](assets/images/readme_images/Tidy_Village_Amiresponsive.jpg)
+
+-----------------------------------------
+
 ## [**Table of Contents**](<#table-of-contents>)
-   [**Early Concept**](<#early-concept>)
+   [**Early Concept / User Experience**](<#early-concept>)
    * [**Design Ethos**](<#design-ethos>)
    * [**Typography**](<#typography>)
    * [**Colors**](<#colors>)
@@ -24,8 +28,8 @@ Upon completion of the course and with further work it may become a live site, a
    * [**Main Page**](<#main-page>)
       * [**Landing Section**](<#landing-section>)
       * [**About Section**](<#about-section>)
-   * [**Gallery**](<#gallery>)
-   * [**Contact Form**](<#contact-form>)
+   * [**Discover Page**](<#discover-page>)
+   * [**Contact Page**](<#contact-page>)
    * [**Future roadmap**](<#future-roadmap>)
 
 ## [**TECHNOLOGY**](<#technology>)
@@ -57,7 +61,7 @@ Upon completion of the course and with further work it may become a live site, a
 ## Early Concept
 
    * ### Design Ethos
-   * Early on I decided to go with a fairly standard layout. The site is predominantly aimed at local users and for the group to itself to have a central hub it can use for charity events (see roadmap future section below) I considered 3 main goals.
+   * Early on I decided to go with a fairly standard layout. The site is mainly aimed at local users and to provide the group with a central hub it can use when publicising itself, with charity events and fundraising (see roadmap future section below) I considered 3 main goals.
       * Not being to content heavy but just giving a general vibe about what the group is and the village they help to maintain.
       * Being easy for other users to maintain or add content to (no heavy use of scripting, made with pure css/html)
       * Being easy to iterate on later if the sites scope increases.
@@ -68,6 +72,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 ![](assets/images/readme_images/atv_concept1.png) ![](assets/images/readme_images/atv_concept2.png)
 
    * Eventually the final design incorporated elements of both ideas (see below) with a more retro but cleaner style applied. Only pure HTML and CSS were used (except for 1 instance of a font awesome script to add an icon for the mobile menu) <br/>Further to this the desire was to have slightly different layouts at various sizes in an attempt to convey the same feeling regardless how it was viewed. The fonts were chosen to convey a subtle retro style without being to difficult to read. 
+   * The layout was kept simple so I could display my grasp of responsive design. All the elements have been styled and tweaked according to size. By resizing in dev tools, you can see the content shift around at almost all sizes dynamically. In some cases reformatting, adding or removing content, changing animations and more dependant on size.
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -95,21 +100,17 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
 * ### Development process
     * Git Commits - Being new to Git I wanted to keep my commits descriptive and do so often. In retrospect some are longer than is preferred but I hope they convey a sense of purpose. A labelling convention was used:
-     Maint: for maintenance or general code changes
-     Style: for large changes to layout or design elements
-     repair: for fixing errors I introduced
-     readme: for changes to the readme file
-     and so on
+       * Maint: for maintenance or general code changes
+       * Style: for large changes to layout or design elements
+       * repair: for fixing errors I introduced
+       * readme: for changes to the readme file
+       * and so on
    * Code Comments - I have left comments in both the html and css files to give a sense of structure and make it easier for future developers to modify
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
 # **FINAL DESIGN**
-
-## Appearance main page on different devices
-
-![](assets/images/readme_images/Tidy_Village_Amiresponsive.jpg)
 
 ## Features
 
@@ -118,7 +119,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * On screen sizes above 820px the navigation consists of 3 buttons floated right with a simple animation when hovered. These show active page with an underline effect.
    * All elements are responsive at various sizes
    * The bunting (flags) effect is desinged to be asymmetrical, it shifts and scales at various screen sizes to remain in view but not to obscure anything vital.
-   * Bunting was designed using inkscape by me. It is not present on the discover and contact pages.
+   * Bunting was designed using inkscape by me. It is not present on the discover and contact pages. It goes under and above certain elements by using z-index.
    * Navigation elements are consistent across 3 pages
 
 ![](assets/images/readme_images/Tidy_Village_UX.jpg)
@@ -129,11 +130,11 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 * ### Mobile Navigation
 
   * On screen sizes below 820px the buttons are removed from view and replaced with a simple hamburger style menu. As detailed above this is pure css no javascript was used.
-    * This is achieved a with navigation menu positioned off screen, with with visibility set to invisible.
+    * This is achieved with a navigation menu positioned off screen.
     * When the radio button is clicked (which is hidden and covered with a font awesome hamburger icon) the navigation slides into view.
     * The radio button itself is not present above 820px as already mentioned.
     * The radio button has an aria label as no real label is present (for accessability)
-  * This screen size was originally 768px but following feedback from industry professional it was increased to 820px to account for larger tablets. This also prevents the buttons clashing with other graphical elements on resize.
+  * This screen size was originally 768px but following feedback from mentor it was increased to 820px to account for larger tablets. This also prevents the buttons clashing with other graphical elements on resize.
 
 ![](assets/images/readme_images/Tidy_Village_HB_UX.jpg)
 
@@ -144,7 +145,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * ### Landing section
      * Hero Image of Aghamores main street with welcome button.
      * Welcome button auto navigates to the text content below (mainly for use on mobiles)
-     * This image is wide and expansive and not suited to harsh scaling or losing aspect ration. Css styling that scales the image without effecting the container or aspect ratio is used to convery the same feel at various sizes.
+     * This image is wide and expansive and not suited to harsh scaling or losing aspect ratio. Css styling that scales the image without effecting the container or aspect ratio is used to convey the same feel at various sizes.
      * Image created in gimp from photo taken by me and then optimised with [tingpng.com](http://tinypng.com)
      * Also features overlapping bunting effect (as detailed above)
 
@@ -159,38 +160,42 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
       * Each section has descriptive text, 4 corner graphics, underline graphic and an icon that sums up the content (done with svgs from 3rd party and hand built pngs respectively)
       * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to sit below the sites content regardless of flex boxes above.
       * The footer is consistent across all 3 pages
-      * The flow of this content was shifted following feedback from an industry professional. It now has the place information first and welcome / Intro message second.
+      * The flow of this content was shifted following feedback from mentor. It now has the place information first and welcome / Intro message second.
+      * At mobile screen size the content shifts back to have the welcome message first.
+      * Future note: I did toy with the idea of having each box collapse down and resize to full on click. The text would then load in with an animation. While doing this with CSS was possible (using a similar focus technique I used on the gallery) it felt needlessly clunky for the main page and would have required hiding important text. Ultimately I decided against this. If the site ever went live I would revisit this idea but using a technology like javascript to implement it.
 
 ![](assets/images/readme_images/Tidy_Village_AboutInfo.jpg)
 
 --------------------------------
 
-* ## Gallery page
+* ## Discover Page
 
-   * Purpose of the page is to provide a grid based gallery that is fully responsive
+   * Purpose of the page is to provide a grid based gallery that is fully responsive. Grid was used over flex as it offers greater control for the style of gallery I wanted, whilst still allowing a dynamic masonry style effect.
    * Rather than shifting the layout the page merely responds by having each picture take up different amounts of rows and columns on resize
    * The images have a hover functionality which plays a short subtle flash animation to indicate interactivity
    * At higher than 1000px each image also has a subtle zoom effect on hover & click
    * Each image can be clicked to view in a larger format which then shows a caption. Clicking outside the image goes back to main gallery inline with expected function that most users will have experience of.
    * The page is built using pure css and html. The focus selector in CSS is used to zoom each image when clicked. When first implemented this resulted in ugly background shifts of the other images and unwanted interaction where clicking outside would result in a new image zoom rather than reverting the zoom. 
        * To fix this a background div was created that sits below all the content using z-index. On focus of an image this background div becomes visible and shifts up the z-index to cover everything, except the image that is zoomed and its respective caption.
-       * This allows the user to click around the image (allowing the image to then 'lose focus') without unwated interaction with the rest of the gallery. I did experiment with making this transparent but it was visually confusing.
-    * Following feedback from an industry professional the zoom effect was removed from small screen devices as it was visually confusing.
+       * This allows the user to click around the image (allowing the image to then 'lose focus') without unwanted interaction with the rest of the gallery. I did experiment with making this transparent but it was visually confusing.
+    * Following feedback from mentor the zoom effect was removed from small screen devices as it was visually confusing.
     * Following feedback from a test user I had to remove the native 'lazy loading' tags in the html as they created a huge bug on Safari iOS 
-    * Following feedback from an industry professional the gallery was edited to show less images on smaller devices to prevent excessive scrolling.
+    * Following feedback from mentor the gallery was edited to show less images on smaller devices to prevent excessive scrolling.
+    * If made into a live site this page would be subsectioned with different galleries relating to different events or themes, would also feature video clips of events.
     
 ![](assets/images/readme_images/Tidy_Village_Gallerypage.jpg)
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
-* ## Contact page
+* ## Contact Page
 
    * Page has a simple form that allows users to post feedback with a rural background image (taken by me)
    * The form uses percentile width values and margins to remain centered
    * It's elements (labels & fields) are either inline or block depending on screen size to create a coherent layout at all sizes
    * It's content is responsive in terms of text and field size for smaller devices
-   * The form has had its functionality removed and a very basic thank you page added to show it works as intended without ruining navigation flow by going offsite.
+   * The form has had its functionality removed and a very basic thank you page added to show it works as intended without ruining navigation flow by going offsite. 
+   * The 'Thank You' page was created following mentor feedback to prevent navigating off site but would not be part of a live site.
 
 ![](assets/images/readme_images/Tidy_Village_Contactpage.jpg)
 
