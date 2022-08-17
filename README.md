@@ -5,7 +5,8 @@ The site is for a community group of volunteers and the organisation which helps
 The site is an imagined one for a real group that may require such a site in the near future. 
 Upon completion of the course and with further work it may become a live site, and was designed with this in mind.
 
-## [**Early Concept**](<#early-concept>)
+## [**Table of Contents**](<#table-of-contents>)
+   [**Early Concept**](<#early-concept>)
    * [**Design Ethos**](<#design-ethos>)
    * [**Typography**](<#typography>)
    * [**Colors**](<#colors>)
@@ -65,6 +66,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
    * Eventually the final design incorporated elements of both ideas (see below) with a more retro but cleaner style applied. Only pure HTML and CSS were used (except for 1 instance of a font awesome script to add an icon for the mobile menu) <br/>Further to this the desire was to have slightly different layouts at various sizes in an attempt to convey the same feeling regardless how it was viewed. The fonts were chosen to convey a subtle retro style without being to difficult to read. 
 
+[Go back](<#table-of-contents>)
 -----------------------------------------
 
  * ### Typography
@@ -72,18 +74,26 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * Pacifico - is used for more decorative headings that require impact 
    * Both were chosen to fit the somewhat retro feel
 
+[Go back](<#table-of-contents>)
 -----------------------------------------
 
  * ### Colors
     * A soft off white stone like color was chosen, along with a darker brown (nearly black) for the text
     * Red and white (the colors of the area of Aghamore) were used in the title and small design elements (flags, border graphics)
 
+[Go back](<#table-of-contents>)
 -----------------------------------------
 
-## Development process
-   * Throughout I have attempted to commit often and use a consistent style annotating each commit with a basic concept such as 'maint' for maintenance and general coding 'repair' for fixing broken elements 'style' for altering visual aspects and so forth.
-   * I have left comments in both the html and css files to give a sense of structure and make it easier for future developers to modify
+ * ### Development process
+   * Git Commits - Being new to Git I wanted to keep my commits descriptive and do so often. In retrospect some are longer than is preferred but I hope they convey a sense of purpose. A labelling convention was used:
+     * Maint: for maintenance or general code changes
+     * Style: for large changes to layout or design elements
+     * repair: for fixing errors I introduced
+     * readme: for changes to the readme file
+     * and so on
+   * Code Comments - I have left comments in both the html and css files to give a sense of structure and make it easier for future developers to modify
 
+[Go back](<#table-of-contents>)
 -----------------------------------------
 
 # The final design
