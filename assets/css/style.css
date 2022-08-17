@@ -463,7 +463,7 @@ a {
     width: 100%;
     height: 5px;
     margin: 0;
-    padding: 0;
+    padding: 0 17px 0 0;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -476,7 +476,7 @@ a {
     width: 100%;
     height: fit-content;
     margin: 0;
-    padding: 0;
+    padding: 0 15px 0 0;
     border: none;
     justify-content: center;
     box-shadow: none;
@@ -544,6 +544,15 @@ a {
     }
 }
 
+@media screen and (max-width: 674px){
+    #aboutleft {
+        order: 2;
+    }
+
+    #aboutcenter {
+        order: 1;
+    }
+}
 
 /* footer */
 
