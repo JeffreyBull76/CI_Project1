@@ -181,6 +181,8 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * The page is built using pure css and html. The focus selector in CSS is used to zoom each image when clicked. When first implemented this resulted in ugly background shifts of the other images and unwanted interaction where clicking outside would result in a new image zoom rather than reverting the zoom. 
        * To fix this a background div was created that sits below all the content using z-index. On focus of an image this background div becomes visible and shifts up the z-index to cover everything, except the image that is zoomed and its respective caption.
        * This allows the user to click around the image (allowing the image to then 'lose focus') without unwanted interaction with the rest of the gallery. I did experiment with making this transparent but it was visually confusing.
+    * This page is highly interactive and I believe answers the criteria for interactive features the user has control over. They can zoom images and navigate the menu on any screen size.
+    * At mobile size a concession on image zoom was made. It was not possible to show a full screen picture without displaying it to small. So I zoomed each image a little and allowed it to flow off the screen. This could be easily reversed if feedback dictated.
     * Following feedback from mentor the zoom effect was removed from small screen devices as it was visually confusing.
     * Following feedback from a test user I had to remove the native 'lazy loading' tags in the html as they created a huge bug on Safari iOS 
     * Following feedback from mentor the gallery was edited to show less images on smaller devices to prevent excessive scrolling.
@@ -218,8 +220,12 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 [Go back](<#features>)
 -----------------------------------------
 * ## Technology
-
-AMEND
+   * HTML - used for main strucute of site
+   * CSS - external stylesheet used to apply visual style, effect and functionality to the html
+   * GIThub - used for hosting and editiing the site via a repositry
+   * GITpod - used to deploy the site and edit the code via a workspace in chrome
+   * GIMP - open source raster image editing software used to alter, crop and scale the photographic elements
+   * Inkscape - open source svg editing software used to create the mockups of early ideas, icon manipulation and creation
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -248,8 +254,6 @@ AMEND
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
-AMEND 
-
 * ## Deployment
 
    * The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -258,18 +262,29 @@ AMEND
    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
       * The live link can be found - [Here](https://jeffreybull76.github.io/CI_Project1/index.html)
 
+* ### Forking the repository
+   * A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
+   * Log in to GitHub and locate the repository.
+   * On the right hand side of the page inline with the repository name is a button called 'Fork', click on the button to create a copy of the original repository in your GitHub Account.
+
+* ### Cloning the repository
+   * Under the repo’s name, click on the code tab.
+   * In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
+   * In your IDE of choice, open Git Bash.
+   * Change the current working directory to the location where you want the cloned directory to be made.
+   * Type git clone, and then paste the URL copied from GitHub.
+   * Press enter and the local clone will be created.
+
 [Go back](<#table-of-contents>)
 -----------------------------------------
-AMEND 
 
 * ## Content
-
    * All text and images are original created by myself
-   * The gallery was created by following numerous grid tutorials, itterating on those ideas at a base level to display images, and adding the pop up functionality
-   * Hamburger icon from font awesome
-   * Fonts from googlefonts (Pacifico & Quicksand)
+   * Hamburger icon from [Font Awesome](https://fontawesome.com/)
+   * Fonts - Pacifico & Quicksand - from [Google Fonts](https://fonts.google.com/)
    * 3 icons on about section from [SVGrepo](https://svgrepo.com)
-
+   * The gallery was created by following numerous grid tutorials, itterating on those ideas at a base level to display images, and adding the pop up functionality. Integral to making it work was this resource [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+ 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
