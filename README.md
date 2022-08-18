@@ -157,8 +157,9 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 
    * ### About Section
       * Consists of 3 main content blocks created using Flex 
-      *  The content of these boxes has been styled to be responsive at different screen sizes, including keeping its justification coherent as rows are added.
+      * The content of these boxes has been styled to be responsive at different screen sizes, including keeping its justification coherent as rows are added.
       * Each section has descriptive text, 4 corner graphics, underline graphic and an icon that sums up the content (done with svgs from 3rd party and hand built pngs respectively)
+      * The sections contain a link to the gallery page and a youtube page respectively.
       * the footer seen at the bottom has basic copyright data and links to social media (mostly basic links to the main pages of each site in this case but added for example purpose) it is designed to sit below the sites content regardless of flex boxes above.
       * The footer is consistent across all 3 pages
       * The flow of this content was shifted following feedback from mentor. It now has the place information first and welcome / Intro message second.

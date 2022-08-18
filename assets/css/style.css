@@ -406,6 +406,11 @@ a {
     background-color: rgb(247, 242, 231);
 }
 
+#about div a {
+    font-size: 16px;
+    color: rgb(190, 75, 87);
+}
+
 #about h3 {
     font-size: 170%;
     font-weight: lighter;
