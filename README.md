@@ -119,7 +119,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * Contains a title with the groups name. This has been styled with offset shadow effects
    * On screen sizes above 820px the navigation consists of 3 buttons floated right with a simple animation when hovered. These show active page with an underline effect.
    * All elements are responsive at various sizes
-   * The bunting (flags) effect is desinged to be asymmetrical, it shifts and scales at various screen sizes to remain in view but not to obscure anything vital.
+   * The bunting (flags) effect is designed to be asymmetrical, it shifts and scales at various screen sizes to remain in view but not to obscure anything vital.
    * Bunting was designed using inkscape by me. It is not present on the discover and contact pages. It goes under and above certain elements by using z-index.
    * Navigation elements are consistent across 3 pages
 
@@ -134,7 +134,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
     * This is achieved with a navigation menu positioned off screen.
     * When the radio button is clicked (which is hidden and covered with a font awesome hamburger icon) the navigation slides into view.
     * The radio button itself is not present above 820px as already mentioned.
-    * The radio button has an aria label as no real label is present (for accessability)
+    * The radio button has an aria label as no real label is present (for accessibility)
   * This screen size was originally 768px but following feedback from mentor it was increased to 820px to account for larger tablets. This also prevents the buttons clashing with other graphical elements on resize.
 
 ![](assets/images/readme_images/Tidy_Village_HB_UX.jpg)
@@ -185,7 +185,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
     * Following feedback from mentor the zoom effect was removed from small screen devices as it was visually confusing.
     * Following feedback from a test user I had to remove the native 'lazy loading' tags in the html as they created a huge bug on Safari iOS 
     * Following feedback from mentor the gallery was edited to show less images on smaller devices to prevent excessive scrolling.
-    * If made into a live site this page would be subsectioned with different galleries relating to different events or themes, would also feature video clips of events.
+    * If made into a live site this page would be sub sectioned with different galleries relating to different events or themes, would also feature video clips of events.
     
 ![](assets/images/readme_images/Tidy_Village_Gallerypage.jpg)
 
@@ -221,10 +221,10 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 * ## Technology
    * HTML - used for main structure of site
    * CSS - external stylesheet used to apply visual style, effect and functionality to the html
-   * GIThub - used for hosting and editiing the site via a repositry
+   * GIThub - used for hosting and editing the site via a repository
    * GITpod - used to deploy the site and edit the code via a workspace in chrome
    * GIMP - open source raster image editing software used to alter, crop and scale the photographic elements
-   * Inkscape - open source svg editing software used to create the mockups of early ideas, icon manipulation and creation
+   * Inkscape - open source svg editing software used to create the mock-ups of early ideas, icon manipulation and creation
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -301,7 +301,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
    * Hamburger icon from [Font Awesome](https://fontawesome.com/)
    * Fonts - Pacifico & Quicksand - from [Google Fonts](https://fonts.google.com/)
    * 3 icons on about section from [SVGrepo](https://svgrepo.com)
-   * The gallery was created by following numerous grid tutorials, itterating on those ideas at a base level to display images, and adding the pop up functionality. Integral to making it work was this resource [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+   * The gallery was created by following numerous grid tutorials, iterating on those ideas at a base level to display images, and adding the pop up functionality. Integral to making it work was this resource [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
  
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -312,7 +312,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
       * In future I would settle on one convention for responsive CSS code and have each query done per major element.
       * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
       * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying code somewhat differently, but the end result and actual look I am happy with.
-     * Thanks to my mentor for the advice given which helped get this project over the line (despite my life getting in the way of our sessions together) and thank you to the CI slack community for advice and feeback.
+     * Thanks to my mentor for the advice given which helped get this project over the line (despite my life getting in the way of our sessions together) and thank you to the CI slack community for advice and feedback.
      * Although I have said throughout no JS was used there does exist one instance used for the font awesome icon but no other elements or functions use scripting. A minor thing but I wouldn't want to be misleading.
    
 
