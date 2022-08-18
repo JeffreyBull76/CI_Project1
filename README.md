@@ -219,7 +219,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 [Go back](<#features>)
 -----------------------------------------
 * ## Technology
-   * HTML - used for main strucute of site
+   * HTML - used for main structure of site
    * CSS - external stylesheet used to apply visual style, effect and functionality to the html
    * GIThub - used for hosting and editiing the site via a repositry
    * GITpod - used to deploy the site and edit the code via a workspace in chrome
@@ -309,7 +309,7 @@ Below you will see two early concepts quickly sketched using inkscape and gimp.
 * ## Final Thoughts
     * Lessons Learned
       * Getting the form to work with floated elements was problematic, this page in future could possibly use a redesign as it ended up being needlessly complex.
-      * In future I would settle on one convetion for responsive CSS code and have each query done per major element.
+      * In future I would settle on one convention for responsive CSS code and have each query done per major element.
       * Using JS would have made much of the functionality easier to achieve but for this project I wanted to achieve this with CSS and HTML only
       * Having a more coherent code style from page to page would be preferable in future. Hopefully by viewing the progression of the code you can see how my knowledge grew. Were I to start again I would approach the front page underlying code somewhat differently, but the end result and actual look I am happy with.
      * Thanks to my mentor for the advice given which helped get this project over the line (despite my life getting in the way of our sessions together) and thank you to the CI slack community for advice and feeback.
